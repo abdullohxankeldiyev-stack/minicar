@@ -1,0 +1,2144 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MiniCarCollectionUz Katalogi - AutoArt, Minichamps, Bburago, GT Spirit 1:18 va 1:24 masshtabdagi eng sara metall kolleksion avtomobil modellari. O'zbekiston bo'ylab tezkor yetkazib berish.">
+    <meta name="keywords" content="MiniCarCollectionUz, kolleksion modellar katalogi, diecast mashinalar, 1:18 modellar toshkent, 1:24 modellar uzbekistan, autoart, bburago, minichamps, metall mashinalar sotib olish">
+    <meta name="author" content="MiniCarCollectionUz">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Katalog | MiniCarCollectionUz - Eksklyuziv Masshtabli Modellar">
+    <meta property="og:description" content="Eng nufuzli diecast ishlab chiqaruvchilaridan 1:18 va 1:24 masshtabdagi og'ir metall durdonalar katalogi. 1-Click orqali tezkor buyurtma bering.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t.me/MiniCarCollectionUz">
+
+    <title>Kolleksion Mashinalar Katalogi | MiniCarCollectionUz</title>
+
+    <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           1. ROOT DESIGN SYSTEM (SHARED WITH INDEX.HTML)
+           ========================================================================== */
+        :root {
+            --bg-body: #080a0f;
+            --bg-surface: #0f131a;
+            --bg-card: #151a24;
+            --bg-card-hover: #1c2230;
+            --bg-glass: rgba(18, 23, 33, 0.78);
+            --bg-glass-heavy: rgba(10, 13, 19, 0.94);
+            --primary: #ff334b;
+            --primary-glow: rgba(255, 51, 75, 0.45);
+            --primary-dark: #d61f35;
+            --gold: #f59e0b;
+            --gold-glow: rgba(245, 158, 11, 0.35);
+            --cyan: #06b6d4;
+            --accent-green: #10b981;
+            --purple: #8b5cf6;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-medium: rgba(255, 255, 255, 0.15);
+            --border-accent: rgba(255, 51, 75, 0.35);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --font-display: 'Syne', sans-serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --max-w: 1380px;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+            --shadow-glow: 0 0 25px var(--primary-glow);
+        }
+
+        /* Base Resets */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; color-scheme: dark; }
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(255, 51, 75, 0.07) 0%, transparent 40%),
+                radial-gradient(circle at 90% 40%, rgba(245, 158, 11, 0.06) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+                linear-gradient(180deg, #080a0f 0%, #0d1118 100%);
+            min-height: 100vh;
+        }
+        a { color: inherit; text-decoration: none; transition: color var(--transition-fast); }
+        button { cursor: pointer; border: none; outline: none; background: none; font-family: inherit; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+        .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+        /* Badge Utilities */
+        .badge-pulse {
+            display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px;
+            background: rgba(255, 51, 75, 0.12); border: 1px solid var(--border-accent);
+            border-radius: 999px; font-size: 0.8rem; font-weight: 700; color: var(--primary);
+            text-transform: uppercase; letter-spacing: 0.08em;
+        }
+        .pulse-dot {
+            width: 8px; height: 8px; border-radius: 50%; background: var(--primary);
+            box-shadow: 0 0 10px var(--primary); animation: pulseAnim 1.6s infinite ease-in-out;
+        }
+        @keyframes pulseAnim {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.5; }
+        }
+
+        /* ==========================================================================
+           2. TOP TICKER BAR
+           ========================================================================== */
+        .ticker-bar {
+            background: linear-gradient(90deg, #090c12, #141924, #090c12);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 8px 0; font-size: 0.78rem; color: var(--text-muted);
+        }
+        .ticker-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .ticker-left { display: flex; align-items: center; gap: 20px; }
+        .ticker-item { display: inline-flex; align-items: center; gap: 6px; }
+        .ticker-item svg { color: var(--gold); }
+        .ticker-right { display: flex; align-items: center; gap: 18px; }
+        .telegram-pill-link {
+            display: inline-flex; align-items: center; gap: 6px; color: #38bdf8;
+            font-weight: 600; transition: transform var(--transition-fast);
+        }
+        .telegram-pill-link:hover { transform: translateY(-1px); color: #7dd3fc; }
+
+        /* ==========================================================================
+           3. MAIN HEADER NAVIGATION
+           ========================================================================== */
+        .main-header {
+            position: sticky; top: 0; z-index: 1000;
+            background: var(--bg-glass-heavy); backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border-subtle);
+            transition: all var(--transition-smooth);
+        }
+        .main-header.scrolled {
+            box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+            border-bottom-color: rgba(255, 51, 75, 0.25);
+        }
+        .header-content {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 84px; gap: 24px;
+        }
+        .brand-logo { display: flex; align-items: center; gap: 12px; user-select: none; }
+        .logo-emblem {
+            width: 46px; height: 46px; background: linear-gradient(135deg, #ff334b, #991b1b);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            color: #fff; box-shadow: 0 6px 18px rgba(255, 51, 75, 0.4);
+            position: relative; overflow: hidden;
+        }
+        .logo-emblem::after {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: linear-gradient(60deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(25deg); animation: shineSweep 4s infinite;
+        }
+        @keyframes shineSweep {
+            0% { transform: translateX(-150%) rotate(25deg); }
+            25%, 100% { transform: translateX(150%) rotate(25deg); }
+        }
+        .logo-text h1 {
+            font-family: var(--font-display); font-size: 1.35rem; font-weight: 800;
+            letter-spacing: -0.02em; line-height: 1.1;
+        }
+        .logo-text h1 span { color: var(--primary); }
+        .logo-subtitle {
+            font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--gold); font-weight: 700;
+        }
+
+        .desktop-nav { display: flex; align-items: center; gap: 8px; }
+        .nav-link {
+            padding: 10px 16px; font-size: 0.92rem; font-weight: 600;
+            color: var(--text-muted); border-radius: var(--radius-sm);
+            transition: all var(--transition-fast); position: relative;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-main); background: rgba(255, 255, 255, 0.05);
+        }
+        .nav-link.active::after {
+            content: ''; position: absolute; bottom: 4px; left: 16px; right: 16px;
+            height: 2px; background: var(--primary); border-radius: 2px;
+            box-shadow: 0 0 8px var(--primary);
+        }
+        .nav-badge-new {
+            background: var(--gold); color: #000; font-size: 0.65rem; font-weight: 800;
+            padding: 2px 6px; border-radius: 999px; margin-left: 6px; text-transform: uppercase;
+        }
+
+        .header-actions { display: flex; align-items: center; gap: 14px; }
+        .icon-action-btn {
+            position: relative; width: 44px; height: 44px; display: flex;
+            align-items: center; justify-content: center; background: var(--bg-card);
+            border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+            color: var(--text-main); transition: all var(--transition-fast);
+        }
+        .icon-action-btn:hover {
+            border-color: var(--primary); color: var(--primary);
+            box-shadow: 0 0 15px rgba(255,51,75,0.25); transform: translateY(-2px);
+        }
+        .cart-badge {
+            position: absolute; top: -4px; right: -4px; background: var(--primary);
+            color: #fff; font-size: 0.72rem; font-weight: 800; width: 20px; height: 20px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            border: 2px solid var(--bg-surface); box-shadow: 0 0 8px var(--primary);
+        }
+        .btn-order-express {
+            background: linear-gradient(135deg, var(--primary), #b91c1c); color: #fff;
+            padding: 10px 20px; border-radius: var(--radius-md); font-weight: 700;
+            font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px;
+            box-shadow: 0 6px 20px rgba(255, 51, 75, 0.35); transition: all var(--transition-smooth);
+        }
+        .btn-order-express:hover {
+            transform: translateY(-2px); box-shadow: 0 10px 25px rgba(255, 51, 75, 0.5);
+            filter: brightness(1.1);
+        }
+        .mobile-toggle {
+            display: none; width: 44px; height: 44px; align-items: center;
+            justify-content: center; background: var(--bg-card);
+            border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+        }
+
+        /* ==========================================================================
+           4. CATALOG HERO / HEADER SECTION
+           ========================================================================== */
+        .catalog-hero {
+            position: relative; padding: 48px 0 36px;
+            border-bottom: 1px solid var(--border-subtle);
+            background: radial-gradient(circle at 50% -20%, rgba(255, 51, 75, 0.12), transparent 70%);
+        }
+        .catalog-hero-inner {
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+            max-width: 860px; margin: 0 auto;
+        }
+        .catalog-hero-title {
+            font-family: var(--font-display); font-size: 3rem; font-weight: 800;
+            letter-spacing: -0.02em; line-height: 1.15; margin: 16px 0 14px;
+        }
+        .catalog-hero-title span {
+            background: linear-gradient(135deg, #ffffff 30%, #ff6b7d 80%, #f59e0b 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .catalog-hero-desc {
+            font-size: 1.05rem; color: var(--text-muted); max-width: 680px; line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .ai-engine-badge {
+            display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px;
+            background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 999px; font-size: 0.78rem; font-weight: 700; color: var(--gold);
+        }
+
+        /* ==========================================================================
+           5. INTERACTIVE FILTER & SEARCH CONTROL BAR
+           ========================================================================== */
+        .catalog-controls-section {
+            position: sticky; top: 84px; z-index: 900;
+            background: var(--bg-glass-heavy); backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px); border-bottom: 1px solid var(--border-subtle);
+            padding: 16px 0; margin-bottom: 36px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .controls-grid {
+            display: flex; flex-direction: column; gap: 14px;
+        }
+        .controls-top-row {
+            display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+        }
+
+        /* Search Input */
+        .search-box-wrapper {
+            position: relative; flex: 1; min-width: 280px; max-width: 480px;
+        }
+        .search-input {
+            width: 100%; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 12px 42px 12px 42px; color: #fff;
+            font-size: 0.92rem; font-family: var(--font-sans); transition: all var(--transition-fast);
+        }
+        .search-input:focus {
+            border-color: var(--primary); box-shadow: 0 0 15px rgba(255, 51, 75, 0.25);
+            background: var(--bg-card-hover);
+        }
+        .search-icon-left {
+            position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+            color: var(--text-dim); pointer-events: none;
+        }
+        .search-clear-btn {
+            position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+            color: var(--text-dim); font-size: 1rem; padding: 4px; border-radius: 50%;
+            display: none; align-items: center; justify-content: center;
+        }
+        .search-clear-btn:hover { color: #fff; }
+
+        /* Scales Horizontal Tabs */
+        .scale-pills-row {
+            display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+        }
+        .scale-pill-btn {
+            padding: 8px 16px; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: 999px; font-size: 0.82rem; font-weight: 700; color: var(--text-muted);
+            transition: all var(--transition-fast); white-space: nowrap;
+        }
+        .scale-pill-btn:hover, .scale-pill-btn.active {
+            background: var(--primary); border-color: var(--primary); color: #fff;
+            box-shadow: 0 4px 12px rgba(255, 51, 75, 0.35);
+        }
+
+        /* Sorting & View Controls */
+        .controls-action-group {
+            display: flex; align-items: center; gap: 12px; margin-left: auto;
+        }
+        .sort-select-wrapper { position: relative; }
+        .sort-select {
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 10px 34px 10px 14px; color: var(--text-main);
+            font-size: 0.86rem; font-weight: 600; font-family: var(--font-sans);
+            appearance: none; -webkit-appearance: none; cursor: pointer; transition: all var(--transition-fast);
+        }
+        .sort-select:hover, .sort-select:focus {
+            border-color: var(--border-medium); background: var(--bg-card-hover);
+        }
+        .sort-caret {
+            position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+            pointer-events: none; color: var(--text-dim);
+        }
+
+        /* View Mode Switcher */
+        .view-toggle-btns {
+            display: flex; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 3px; gap: 2px;
+        }
+        .view-btn {
+            padding: 7px 10px; border-radius: var(--radius-sm); color: var(--text-dim);
+            display: flex; align-items: center; justify-content: center; transition: all var(--transition-fast);
+        }
+        .view-btn:hover, .view-btn.active {
+            color: #fff; background: rgba(255, 255, 255, 0.1);
+        }
+        .view-btn.active { color: var(--primary); }
+
+        /* Secondary Filter Row: Categories & Quick Tags */
+        .controls-secondary-row {
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.04); flex-wrap: wrap;
+        }
+        .category-filter-tags {
+            display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+        }
+        .cat-tag-btn {
+            font-size: 0.8rem; font-weight: 600; padding: 6px 14px; border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-subtle);
+            color: var(--text-muted); transition: all var(--transition-fast);
+        }
+        .cat-tag-btn:hover, .cat-tag-btn.active {
+            background: rgba(255, 51, 75, 0.15); border-color: var(--primary); color: #fff;
+        }
+
+        .filter-stats-text {
+            font-size: 0.82rem; color: var(--text-dim); font-weight: 500;
+        }
+        .filter-stats-text strong { color: var(--primary); }
+        .btn-reset-filters {
+            font-size: 0.78rem; font-weight: 700; color: #ef4444; background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.25); padding: 5px 12px; border-radius: var(--radius-sm);
+            display: none; align-items: center; gap: 5px; transition: all var(--transition-fast);
+        }
+        .btn-reset-filters:hover { background: rgba(239, 68, 68, 0.2); }
+
+        /* ==========================================================================
+           6. PRODUCT GRID & CARD SYSTEM
+           ========================================================================== */
+        .catalog-container { padding-bottom: 90px; }
+        .product-cards-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+            transition: all var(--transition-smooth);
+        }
+        /* Compact View 3-col */
+        .product-cards-grid.compact-view {
+            grid-template-columns: repeat(3, 1fr); gap: 26px;
+        }
+        /* List View 1-col */
+        .product-cards-grid.list-view {
+            grid-template-columns: 1fr; gap: 18px;
+        }
+
+        /* Individual Product Card */
+        .product-card {
+            background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);
+            padding: 16px; display: flex; flex-direction: column; justify-content: space-between;
+            transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+            position: relative; overflow: hidden;
+        }
+        .product-card:hover {
+            transform: translateY(-8px); border-color: rgba(255, 51, 75, 0.45);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 51, 75, 0.2);
+            background: var(--bg-card-hover);
+        }
+
+        /* Card Badges */
+        .product-card-badge {
+            position: absolute; top: 18px; left: 18px; z-index: 10;
+            display: flex; gap: 6px; flex-wrap: wrap; pointer-events: none;
+        }
+        .tag-scale {
+            background: rgba(10, 14, 22, 0.9); border: 1px solid var(--border-medium);
+            padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.72rem;
+            font-weight: 800; color: #fff; letter-spacing: 0.05em; backdrop-filter: blur(4px);
+        }
+        .tag-status {
+            padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.72rem;
+            font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em;
+        }
+
+        /* Wishlist Heart Button */
+        .wishlist-heart-btn {
+            position: absolute; top: 16px; right: 16px; z-index: 10; width: 36px; height: 36px;
+            border-radius: 50%; background: rgba(10, 14, 22, 0.85); border: 1px solid var(--border-subtle);
+            display: flex; align-items: center; justify-content: center; color: var(--text-dim);
+            backdrop-filter: blur(6px); transition: all var(--transition-fast);
+        }
+        .wishlist-heart-btn:hover { color: var(--primary); border-color: var(--primary); transform: scale(1.1); }
+        .wishlist-heart-btn.active { color: var(--primary); background: rgba(255, 51, 75, 0.15); border-color: var(--primary); }
+        .wishlist-heart-btn.active svg { fill: var(--primary); }
+
+        /* Card Image Wrapper */
+        .product-img-wrapper {
+            position: relative; width: 100%; height: 215px; border-radius: var(--radius-md);
+            overflow: hidden; background: radial-gradient(circle at center, #1e2638 0%, #0d121c 100%);
+            display: flex; align-items: center; justify-content: center; margin-bottom: 14px;
+            cursor: pointer;
+        }
+        .product-img-wrapper img {
+            width: 100%; height: 100%; object-fit: cover; object-position: center;
+            transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+        }
+        .product-card:hover .product-img-wrapper img {
+            transform: scale(1.08); filter: brightness(1.05);
+        }
+
+        /* Quick View Overlay Button */
+        .quick-view-overlay-btn {
+            position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%) translateY(20px);
+            opacity: 0; background: var(--bg-glass-heavy); border: 1px solid var(--border-accent);
+            color: #fff; font-size: 0.76rem; font-weight: 700; padding: 6px 14px; border-radius: 999px;
+            display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(8px);
+            transition: all var(--transition-smooth); pointer-events: none; white-space: nowrap;
+        }
+        .product-card:hover .quick-view-overlay-btn {
+            opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto;
+        }
+        .quick-view-overlay-btn:hover {
+            background: var(--primary); box-shadow: 0 4px 15px rgba(255, 51, 75, 0.5);
+        }
+
+        /* Product Info Block */
+        .product-info { display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
+        .product-meta-row {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.74rem; color: var(--text-dim); margin-bottom: 6px;
+        }
+        .product-brand { color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .product-title {
+            font-family: var(--font-display); font-size: 1.05rem; font-weight: 700;
+            line-height: 1.3; margin-bottom: 10px; color: #fff; min-height: 2.6em;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .product-title a:hover { color: var(--primary); }
+
+        .product-specs-mini {
+            display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px;
+        }
+        .product-specs-mini span {
+            background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-subtle);
+            padding: 3px 8px; border-radius: 6px; font-size: 0.72rem; color: var(--text-muted); font-weight: 500;
+        }
+
+        /* Price & Stock */
+        .product-price-row {
+            display: flex; align-items: flex-end; justify-content: space-between;
+            margin-bottom: 14px; padding-top: 10px; border-top: 1px solid var(--border-subtle);
+        }
+        .price-was { font-size: 0.78rem; color: var(--text-dim); text-decoration: line-through; display: block; }
+        .price-now { font-size: 1.25rem; font-weight: 800; color: #fff; font-family: var(--font-display); }
+        .stock-indicator {
+            font-size: 0.72rem; font-weight: 700; color: var(--accent-green);
+            background: rgba(16, 185, 129, 0.12); padding: 3px 8px; border-radius: 6px;
+        }
+
+        /* Actions */
+        .product-card-actions { display: grid; grid-template-columns: 1fr 44px; gap: 8px; }
+        .btn-add-cart {
+            background: rgba(255, 255, 255, 0.07); border: 1px solid var(--border-medium);
+            padding: 10px 14px; border-radius: var(--radius-sm); font-size: 0.86rem;
+            font-weight: 700; color: #fff; display: inline-flex; align-items: center;
+            justify-content: center; gap: 8px; transition: all var(--transition-fast);
+        }
+        .btn-add-cart:hover {
+            background: var(--primary); border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(255, 51, 75, 0.4);
+        }
+        .btn-quick-buy-card {
+            background: linear-gradient(135deg, var(--primary), #b91c1c); border-radius: var(--radius-sm);
+            color: #fff; font-size: 1.05rem; display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 12px rgba(255, 51, 75, 0.3); transition: all var(--transition-fast);
+        }
+        .btn-quick-buy-card:hover { transform: scale(1.06); filter: brightness(1.15); }
+
+        /* List View Styles */
+        .product-cards-grid.list-view .product-card {
+            flex-direction: row; gap: 24px; align-items: center; padding: 20px;
+        }
+        .product-cards-grid.list-view .product-img-wrapper {
+            width: 280px; height: 180px; margin-bottom: 0; flex-shrink: 0;
+        }
+        .product-cards-grid.list-view .product-title { min-height: auto; font-size: 1.25rem; }
+        .product-cards-grid.list-view .product-card-actions { width: 220px; flex-shrink: 0; }
+
+        /* Empty State */
+        .empty-results-box {
+            grid-column: 1 / -1; text-align: center; padding: 60px 20px;
+            background: var(--bg-card); border: 1px dashed var(--border-medium); border-radius: var(--radius-lg);
+        }
+        .empty-results-box h3 { font-size: 1.4rem; color: #fff; margin-bottom: 8px; font-family: var(--font-display); }
+        .empty-results-box p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
+
+        /* ==========================================================================
+           7. MODAL: QUICK VIEW (TEZKOR KO'RISH)
+           ========================================================================== */
+        .modal-backdrop {
+            position: fixed; inset: 0; z-index: 2000; background: rgba(4, 6, 10, 0.85);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            display: flex; align-items: center; justify-content: center; padding: 20px;
+            opacity: 0; visibility: hidden; transition: all var(--transition-smooth);
+        }
+        .modal-backdrop.open { opacity: 1; visibility: visible; }
+        .quick-view-modal {
+            background: var(--bg-surface); border: 1px solid var(--border-medium);
+            border-radius: var(--radius-xl); width: 100%; max-width: 940px; max-height: 90vh;
+            overflow-y: auto; box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+            transform: scale(0.92) translateY(20px); transition: all var(--transition-smooth);
+            position: relative;
+        }
+        .modal-backdrop.open .quick-view-modal { transform: scale(1) translateY(0); }
+        .modal-close-btn {
+            position: absolute; top: 18px; right: 18px; z-index: 20; width: 40px; height: 40px;
+            border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            color: var(--text-muted); display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; transition: all var(--transition-fast);
+        }
+        .modal-close-btn:hover { color: #fff; border-color: var(--primary); transform: rotate(90deg); }
+
+        .qv-grid {
+            display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; padding: 36px;
+        }
+        .qv-media-col { display: flex; flex-direction: column; gap: 14px; }
+        .qv-main-img-box {
+            position: relative; width: 100%; height: 380px; border-radius: var(--radius-lg);
+            background: radial-gradient(circle at center, #1b2438 0%, #0d121c 90%);
+            border: 1px solid var(--border-subtle); overflow: hidden; display: flex; align-items: center; justify-content: center;
+        }
+        .qv-main-img-box img {
+            width: 100%; height: 100%; object-fit: contain; padding: 10px;
+            transition: transform 0.4s ease;
+        }
+        .qv-details-col { display: flex; flex-direction: column; justify-content: space-between; }
+        .qv-brand-badge {
+            font-size: 0.78rem; font-weight: 800; color: var(--gold); text-transform: uppercase;
+            letter-spacing: 0.1em; margin-bottom: 6px; display: inline-block;
+        }
+        .qv-title {
+            font-family: var(--font-display); font-size: 1.7rem; font-weight: 800;
+            line-height: 1.2; color: #fff; margin-bottom: 12px;
+        }
+        .qv-desc { font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 18px; }
+        .qv-specs-table {
+            background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+            padding: 16px; margin-bottom: 22px;
+        }
+        .qv-spec-row {
+            display: flex; justify-content: space-between; align-items: center; padding: 7px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-size: 0.84rem;
+        }
+        .qv-spec-row:last-child { border-bottom: none; }
+        .qv-spec-label { color: var(--text-dim); }
+        .qv-spec-val { color: #fff; font-weight: 600; text-align: right; }
+
+        .qv-price-cta-row {
+            display: flex; align-items: center; justify-content: space-between; gap: 16px;
+            padding-top: 18px; border-top: 1px solid var(--border-subtle);
+        }
+        .qv-price-box .price-was { font-size: 0.85rem; }
+        .qv-price-box .price-now { font-size: 1.6rem; color: var(--primary); }
+
+        /* ==========================================================================
+           8. TELEGRAM BOT EXPRESS ORDER MODAL (1-CLICK DIRECT DISPATCH)
+           ========================================================================== */
+        .express-modal {
+            background: var(--bg-surface); border: 1px solid var(--border-medium);
+            border-radius: var(--radius-xl); width: 100%; max-width: 520px;
+            padding: 32px; box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+            position: relative; transform: scale(0.92); transition: all var(--transition-smooth);
+        }
+        .modal-backdrop.open .express-modal { transform: scale(1); }
+        .modal-header-express { margin-bottom: 20px; text-align: left; }
+        .modal-header-express h3 {
+            font-family: var(--font-display); font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 6px;
+        }
+        .modal-header-express p { font-size: 0.86rem; color: var(--text-muted); }
+
+        .modal-selected-product {
+            display: flex; align-items: center; gap: 14px; background: var(--bg-card);
+            border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+            padding: 12px; margin-bottom: 22px;
+        }
+        .selected-prod-thumb {
+            width: 70px; height: 50px; border-radius: var(--radius-sm); overflow: hidden;
+            background: #000; flex-shrink: 0;
+        }
+        .selected-prod-info h4 { font-size: 0.9rem; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 4px; }
+        .selected-prod-info p { font-size: 0.85rem; font-weight: 800; color: var(--primary); font-family: var(--font-display); }
+
+        .form-group { margin-bottom: 16px; text-align: left; }
+        .form-label { display: block; font-size: 0.82rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; }
+        .form-input {
+            width: 100%; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 12px 14px; color: #fff; font-size: 0.92rem;
+            font-family: var(--font-sans); outline: none; transition: border-color var(--transition-fast);
+        }
+        .form-input:focus { border-color: var(--primary); }
+        .form-hint { font-size: 0.74rem; color: var(--text-dim); margin-top: 4px; display: block; }
+
+        .telegram-direct-note {
+            display: flex; align-items: center; gap: 10px; background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.25); border-radius: var(--radius-md);
+            padding: 10px 14px; margin: 18px 0; font-size: 0.8rem; color: #7dd3fc;
+        }
+        .btn-submit-order {
+            width: 100%; background: linear-gradient(135deg, var(--primary), #b91c1c);
+            padding: 14px; border-radius: var(--radius-md); font-weight: 800; font-size: 1rem;
+            color: #fff; display: flex; align-items: center; justify-content: center; gap: 8px;
+            box-shadow: 0 6px 20px rgba(255, 51, 75, 0.4); transition: all var(--transition-fast);
+        }
+        .btn-submit-order:hover { filter: brightness(1.1); transform: translateY(-2px); }
+
+        /* Success Card Receipt */
+        .order-success-card { text-align: center; padding: 10px 0; }
+        .success-checkmark {
+            width: 65px; height: 65px; background: rgba(16, 185, 129, 0.15); border: 2px solid var(--accent-green);
+            color: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 2rem; margin: 0 auto 16px;
+        }
+        .receipt-box {
+            background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+            padding: 16px; margin: 20px 0; text-align: left;
+        }
+        .receipt-row {
+            display: flex; justify-content: space-between; font-size: 0.85rem; padding: 6px 0;
+            border-bottom: 1px dashed rgba(255,255,255,0.06);
+        }
+        .receipt-row:last-child { border-bottom: none; }
+
+        /* ==========================================================================
+           9. OFFCANVAS CART DRAWER
+           ========================================================================== */
+        .cart-drawer-backdrop {
+            position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(6px);
+            z-index: 1500; opacity: 0; visibility: hidden; transition: all var(--transition-smooth);
+        }
+        .cart-drawer-backdrop.open { opacity: 1; visibility: visible; }
+        .cart-drawer {
+            position: fixed; top: 0; right: 0; bottom: 0; width: 100%; max-width: 440px;
+            background: var(--bg-surface); border-left: 1px solid var(--border-medium);
+            z-index: 1600; transform: translateX(100%); transition: transform var(--transition-smooth);
+            display: flex; flex-direction: column; justify-content: space-between; padding: 24px;
+        }
+        .cart-drawer.open { transform: translateX(0); }
+        .drawer-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle);
+        }
+        .drawer-header h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: #fff; }
+        .drawer-items-list { flex-grow: 1; overflow-y: auto; padding: 18px 0; display: flex; flex-direction: column; gap: 14px; }
+        .drawer-item {
+            display: flex; gap: 12px; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 12px; align-items: center;
+        }
+        .drawer-item-img {
+            width: 72px; height: 52px; border-radius: var(--radius-sm); overflow: hidden;
+            background: #000; flex-shrink: 0;
+        }
+        .drawer-item-details { flex-grow: 1; min-width: 0; }
+        .drawer-item-title {
+            font-size: 0.85rem; font-weight: 700; color: #fff; white-space: nowrap;
+            overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px;
+        }
+        .drawer-item-price { font-size: 0.86rem; color: var(--primary); font-weight: 800; font-family: var(--font-display); }
+        .drawer-qty-controls { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+        .btn-qty {
+            width: 24px; height: 24px; border-radius: 4px; background: rgba(255,255,255,0.08);
+            display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;
+        }
+        .btn-qty:hover { background: var(--primary); color: #fff; }
+
+        .drawer-footer {
+            padding-top: 18px; border-top: 1px solid var(--border-subtle);
+        }
+        .drawer-total-row {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;
+        }
+        .drawer-total-row span { font-size: 0.95rem; color: var(--text-muted); }
+        .drawer-total-row strong { font-size: 1.4rem; color: #fff; font-family: var(--font-display); }
+
+        /* ==========================================================================
+           10. TOAST NOTIFICATIONS
+           ========================================================================== */
+        .toast-container {
+            position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+            display: flex; flex-direction: column; gap: 10px; pointer-events: none;
+        }
+        .toast-msg {
+            background: rgba(15, 19, 26, 0.95); border: 1px solid var(--border-accent);
+            padding: 14px 20px; border-radius: var(--radius-md); color: #fff; font-size: 0.88rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8); display: flex; align-items: center; gap: 10px;
+            backdrop-filter: blur(12px); animation: toastIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: auto;
+        }
+        @keyframes toastIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+        /* ==========================================================================
+           11. FOOTER
+           ========================================================================== */
+        .main-footer {
+            background: #05070a; border-top: 1px solid var(--border-subtle);
+            padding: 60px 0 30px; margin-top: 40px;
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
+            color: #fff; margin-bottom: 18px;
+        }
+        .footer-col p { font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 0.86rem; color: var(--text-muted); transition: all var(--transition-fast); }
+        .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+        .footer-bottom {
+            padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.8rem; color: var(--text-dim); flex-wrap: wrap; gap: 12px;
+        }
+
+        /* ==========================================================================
+           12. RESPONSIVE BREAKPOINTS
+           ========================================================================== */
+        @media (max-width: 1200px) {
+            .product-cards-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 900px) {
+            .product-cards-grid { grid-template-columns: repeat(2, 1fr); }
+            .qv-grid { grid-template-columns: 1fr; }
+            .qv-main-img-box { height: 280px; }
+            .desktop-nav { display: none; }
+            .mobile-toggle { display: flex; }
+            .catalog-hero-title { font-size: 2.2rem; }
+            .controls-action-group { width: 100%; justify-content: space-between; }
+        }
+        @media (max-width: 640px) {
+            .product-cards-grid { grid-template-columns: 1fr; }
+            .product-cards-grid.compact-view { grid-template-columns: 1fr; }
+            .product-cards-grid.list-view .product-card { flex-direction: column; }
+            .product-cards-grid.list-view .product-img-wrapper { width: 100%; height: 200px; }
+            .product-cards-grid.list-view .product-card-actions { width: 100%; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .search-box-wrapper { max-width: 100%; }
+            .header-actions .btn-order-express span { display: none; }
+            .quick-view-modal { padding: 18px; }
+            .qv-grid { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP TICKER BAR -->
+    <div class="ticker-bar">
+        <div class="container ticker-inner">
+            <div class="ticker-left">
+                <span class="ticker-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Original Zamak Diecast Modellari
+                </span>
+                <span class="ticker-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    O'zbekiston bo'ylab 24-48 soatda bepul yetkazish
+                </span>
+            </div>
+            <div class="ticker-right">
+                <a href="https://t.me/MiniCarCollectionUz" target="_blank" rel="noopener noreferrer" class="telegram-pill-link">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                    Rasmiy Bot: @MiniCarCollectionUz
+                </a>
+                <span>Call Center: +998 (90) 123-45-67</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION HEADER -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-content">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" title="MiniCarCollectionUz Bosh Sahifa">
+                <div class="logo-emblem">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <path d="M5 17h14v-5l-3-4H8L5 12v5z"/>
+                        <circle cx="7.5" cy="17.5" r="2.5"/>
+                        <circle cx="16.5" cy="17.5" r="2.5"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>MiniCar<span>Collection</span></h1>
+                    <span class="logo-subtitle">Uzbekistan Diecast HQ</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="desktop-nav" aria-label="Asosiy Menyu">
+                <a href="index.html" class="nav-link">Bosh Sahifa</a>
+                <a href="catalog.html" class="nav-link active">Katalog</a>
+                <a href="catalog.html?filter=exclusive" class="nav-link">
+                    Eksklyuziv
+                    <span class="nav-badge-new">1:18 VIP</span>
+                </a>
+                <a href="index.html#showroom360" class="nav-link">360° Showroom</a>
+                <a href="cart.html" class="nav-link">Savat</a>
+                <a href="about.html" class="nav-link">Biz Haqimizda & Kafolat</a>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="icon-action-btn" onclick="openCartDrawer()" title="Savatni ko'rish" id="cartOpenBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-badge" id="headerCartCount">0</span>
+                </button>
+
+                <button class="btn-order-express" onclick="openExpressOrderModal('Bugatti Tourbillon (1:18 Limited)', 2990000, 'images/bugatti_tourbillon.jpg')">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                    <span>1-Click Buyurtma</span>
+                </button>
+
+                <button class="mobile-toggle" onclick="focusSearchInput()" aria-label="Qidiruv">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CATALOG HERO HEADER -->
+    <section class="catalog-hero">
+        <div class="container catalog-hero-inner">
+            <span class="badge-pulse">
+                <span class="pulse-dot"></span>
+                Original Diecast Kolleksiya 2026
+            </span>
+
+            <h1 class="catalog-hero-title">
+                Eksklyuziv Masshtabli <br>
+                <span>Avtomobillar Katalogi</span>
+            </h1>
+
+            <p class="catalog-hero-desc">
+                AutoArt, Minichamps, Bburago, GT Spirit va Solido brendlarining 1:18 va 1:24 masshtabdagi og'ir metall, eshiklari ochiladigan, xrom detallangan original modellari.
+            </p>
+
+            <div class="ai-engine-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>AI Nano Banana Studio — Barcha fotosuratlar haqiqiy diecast miniaturalar asosida tayyorlangan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE FILTER & SEARCH BAR (STICKY) -->
+    <section class="catalog-controls-section" id="filterBar">
+        <div class="container controls-grid">
+            
+            <!-- Controls Top Row: Search + Scales + Sorting + View Mode -->
+            <div class="controls-top-row">
+                <!-- Live Search Box -->
+                <div class="search-box-wrapper">
+                    <svg class="search-icon-left" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="catalogSearchInput" class="search-input" placeholder="Model, brend yoki art. qidiring (Masalan: G63, Porsche, BMW, 1:18)..." oninput="handleSearchInput(this.value)">
+                    <button class="search-clear-btn" id="searchClearBtn" onclick="clearSearch()" title="Qidiruvni tozalash">&times;</button>
+                </div>
+
+                <!-- Scale Filter Pills -->
+                <div class="scale-pills-row" id="scalePillsRow">
+                    <button class="scale-pill-btn active" data-scale="all" onclick="setScaleFilter('all', this)">Barcha Masshtablar</button>
+                    <button class="scale-pill-btn" data-scale="1:18" onclick="setScaleFilter('1:18', this)">1:18 Flagman (25-30 sm)</button>
+                    <button class="scale-pill-btn" data-scale="1:24" onclick="setScaleFilter('1:24', this)">1:24 Ovoz & Chiroq (18-22 sm)</button>
+                </div>
+
+                <!-- Sorting & View Controls -->
+                <div class="controls-action-group">
+                    <div class="sort-select-wrapper">
+                        <select class="sort-select" id="catalogSortSelect" onchange="handleSortChange(this.value)" aria-label="Saralash">
+                            <option value="featured">✨ Tavsiya etilgan</option>
+                            <option value="price-asc">💵 Narx: Arzondan qimmatga</option>
+                            <option value="price-desc">💎 Narx: Qimmatdan arzonga</option>
+                            <option value="weight-desc">⚖️ Eng og'ir modellar</option>
+                            <option value="name-asc">🔤 A-Z Nomi bo'yicha</option>
+                        </select>
+                        <svg class="sort-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+
+                    <div class="view-toggle-btns">
+                        <button class="view-btn active" id="viewGridBtn" onclick="setViewMode('grid')" title="Katta to'r ko'rinishi">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                        </button>
+                        <button class="view-btn" id="viewCompactBtn" onclick="setViewMode('compact')" title="3 ustunli ko'rinish">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="5" height="18"></rect><rect x="10" y="3" width="5" height="18"></rect><rect x="17" y="3" width="5" height="18"></rect></svg>
+                        </button>
+                        <button class="view-btn" id="viewListBtn" onclick="setViewMode('list')" title="Ro'yxat ko'rinishi">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls Secondary Row: Category Filter Tabs & Filter Counters -->
+            <div class="controls-secondary-row">
+                <div class="category-filter-tags" id="categoryFilterTags">
+                    <button class="cat-tag-btn active" data-cat="all" onclick="setCategoryFilter('all', this)">Barchasi</button>
+                    <button class="cat-tag-btn" data-cat="exclusive" onclick="setCategoryFilter('exclusive', this)">👑 1:18 VIP Eksklyuziv</button>
+                    <button class="cat-tag-btn" data-cat="supercar" onclick="setCategoryFilter('supercar', this)">🏎️ Superkarlar</button>
+                    <button class="cat-tag-btn" data-cat="suv" onclick="setCategoryFilter('suv', this)">🚙 Yo'ltanlamas & SUV</button>
+                    <button class="cat-tag-btn" data-cat="vip" onclick="setCategoryFilter('vip', this)">🌟 Lyuks & Mansory</button>
+                    <button class="cat-tag-btn" data-cat="jdm" onclick="setCategoryFilter('jdm', this)">🇯🇵 JDM Afsonalar</button>
+                    <button class="cat-tag-btn" data-cat="retro" onclick="setCategoryFilter('retro', this)">🔥 Muskul & Retro</button>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <span class="filter-stats-text" id="filterStatsText">
+                        Jami: <strong id="filterResultCount">15</strong> ta model
+                    </span>
+                    <button class="btn-reset-filters" id="resetFiltersBtn" onclick="resetAllFilters()">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        Filtrni tozalash
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG MAIN CONTAINER -->
+    <main class="container catalog-container">
+        <!-- Live Product Cards Grid -->
+        <div class="product-cards-grid" id="catalogCardsGrid">
+            <!-- Dynamic JavaScript Product Injection -->
+        </div>
+    </main>
+
+    <!-- QUICK VIEW MODAL (TEZKOR KO'RISH) -->
+    <div class="modal-backdrop" id="quickViewBackdrop" onclick="handleBackdropClick(event, 'quickViewBackdrop')">
+        <div class="quick-view-modal" id="quickViewModalBox">
+            <button class="modal-close-btn" onclick="closeQuickViewModal()" title="Yopish">&times;</button>
+            <div id="quickViewContent">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TELEGRAM BOT 1-CLICK EXPRESS ORDER MODAL -->
+    <div class="modal-backdrop" id="expressOrderModal" onclick="handleBackdropClick(event, 'expressOrderModal')">
+        <div class="express-modal">
+            <button class="modal-close-btn" onclick="closeExpressOrderModal()" title="Yopish">&times;</button>
+
+            <div class="modal-header-express">
+                <span class="badge-pulse" style="margin-bottom: 8px;">
+                    <span class="pulse-dot"></span>
+                    Tezkor Xarid
+                </span>
+                <h3 id="modalProdTitle">Model Nomi</h3>
+                <p>Operatorimiz buyurtmangizni Telegram orqali qabul qilib, 5 daqiqada siz bilan bog'lanadi.</p>
+            </div>
+
+            <div id="modalBodyContent">
+                <!-- Form injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- OFFCANVAS SHOPPING CART DRAWER -->
+    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" onclick="closeCartDrawer()"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h3>Savatingiz (Kolleksiya)</h3>
+            <button onclick="closeCartDrawer()" class="modal-close-btn" style="position:static;">&times;</button>
+        </div>
+
+        <div class="drawer-items-list" id="drawerItemsList">
+            <!-- Injected via JS -->
+        </div>
+
+        <div class="drawer-footer">
+            <div class="drawer-total-row">
+                <span>Jami to'lov:</span>
+                <strong id="drawerTotalPrice">0 UZS</strong>
+            </div>
+            <button class="btn-submit-order" onclick="checkoutFromDrawer()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                <span>Telegram orqali Rasmiylashtirish</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATIONS CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <div class="logo-emblem">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 17h14v-5l-3-4H8L5 12v5z"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/></svg>
+                        </div>
+                        <div class="logo-text">
+                            <h2 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 800;">MiniCar<span>Collection</span></h2>
+                            <span class="logo-subtitle">Uzbekistan Diecast HQ</span>
+                        </div>
+                    </div>
+                    <p>O'zbekistondagi eng yirik rasmiy metall kolleksion avtomobil modellari do'koni. AutoArt, Minichamps, Bburago va Kyosho brendlarining asl sifat kafolati.</p>
+                    <a href="https://t.me/MiniCarCollectionUz" target="_blank" rel="noopener noreferrer" class="telegram-pill-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                        <span>Telegram: @MiniCarCollectionUz</span>
+                    </a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Masshtablar</h4>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html?scale=1-18">1:18 Flagman Modellar (25-30 sm)</a></li>
+                        <li><a href="catalog.html?scale=1-24">1:24 Ovoz va Chiroq (18-22 sm)</a></li>
+                        <li><a href="catalog.html?filter=exclusive">1:18 VIP Cheklangan Tiraj</a></li>
+                        <li><a href="catalog.html?filter=supercar">Poyga va Superkarlar</a></li>
+                        <li><a href="catalog.html?filter=suv">Yo'ltanlamas va Gelandewagen</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Mijozlarga</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#faqSection">Yetkazib Berish Shartlari</a></li>
+                        <li><a href="index.html#faqSection">Sifat Kafolati va Qaytarish</a></li>
+                        <li><a href="index.html#showroom360">360° Interaktiv Showroom</a></li>
+                        <li><a href="catalog.html">Katalog va Qidiruv</a></li>
+                        <li><a href="index.html#contactSection">Aloqa va Lokatsiya</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Bog'lanish</h4>
+                    <p style="margin-bottom: 8px;"><strong>Manzil:</strong> Toshkent shahar, Mirobod tumani, Nukus ko'chasi 42</p>
+                    <p style="margin-bottom: 8px;"><strong>Telefon:</strong> +998 (90) 123-45-67</p>
+                    <p style="margin-bottom: 8px;"><strong>Ish vaqti:</strong> 09:00 — 21:00 (Har kuni)</p>
+                    <p style="font-size: 0.8rem; color: var(--gold); margin-top: 10px;">★ Barcha modellar xavfsiz qadoqlashda jo'natiladi</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 MiniCarCollectionUz. Barcha huquqlar himoyalangan. Original Diecast Showroom.</div>
+                <div>Nano Banana AI High-Fidelity Diecast Visualization Engine</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+       JAVASCRIPT: CATALOG LOGIC, FILTERS, CART & TELEGRAM BOT API
+       ========================================================================== -->
+    <script>
+        /* Telegram Bot Configuration */
+        const TELEGRAM_CONFIG = {
+            BOT_TOKEN: "8787981500:AAHN8VkKQ2F0_gxYxIc2Cq90gyyZBYPuNuc",
+            ADMIN_CHAT_ID: "5626243003",
+            CHANNEL_HANDLE: "@MiniCarCollectionUz"
+        };
+
+        /* Complete 15 Diecast Scale Models Dataset (Nano Banana AI Realistic Images) */
+        const PRODUCTS_DATA = [
+            {
+                id: 1,
+                title: "Mercedes-Benz G63 AMG 6x6 Obsidian Black",
+                brand: "AutoArt",
+                article: "AA-76088",
+                scale: "1:18",
+                category: "suv",
+                tags: ["1:18", "suv", "exclusive"],
+                priceWas: 2900000,
+                priceNow: 2450000,
+                stock: 2,
+                weight: 1.45,
+                badge: "Cheklangan",
+                badgeColor: "#ff334b",
+                img: "images/g63_6x6.jpg",
+                specs: {
+                    doors: "6 ta eshik va orqa bort to'liq ochiladi",
+                    weight: "1.45 kg (Og'ir metall)",
+                    material: "Zamak Metall + ABS + Rezina",
+                    scale: "1:18 (Uzunligi 33 sm)",
+                    sound: "Statik yuqori detallashuv",
+                    origin: "AutoArt Composite & Diecast"
+                },
+                desc: "AutoArt kompaniyasining eng qimmatbaho durdonalaridan biri. Barcha 6 ta g'ildirak mustaqil prujinali osma podveskaga ega, kapot ostida 5.5L AMG Twin-Turbo motor detallari, haqiqiy yumshoq salon va o'ziga xos yuk platformasi."
+            },
+            {
+                id: 2,
+                title: "Porsche 911 (992) GT3 RS Weissach Package Lava Orange",
+                brand: "Minichamps",
+                article: "MC-99201",
+                scale: "1:18",
+                category: "supercar",
+                tags: ["1:18", "supercar", "exclusive"],
+                priceWas: 2600000,
+                priceNow: 2190000,
+                stock: 3,
+                weight: 1.15,
+                badge: "Xit Sotuv",
+                badgeColor: "#f59e0b",
+                img: "images/porsche_gt3_rs.jpg",
+                specs: {
+                    doors: "Eshiklar, kapot va bagaj ochiladi",
+                    weight: "1.15 kg",
+                    material: "Diecast metall + uglerod tola imitatsiyasi",
+                    scale: "1:18 (Uzunligi 26 sm)",
+                    sound: "Poyga versiyasi (Statik)",
+                    origin: "Minichamps GmbH Germany"
+                },
+                desc: "Weissach yengillashtirilgan poyga paketi. Faol orqa ulkan qanot, uglerod-keramika qizil tormoz supportlari, buriluvchi old g'ildiraklar va trek xavfsizlik karkasi (Roll cage)."
+            },
+            {
+                id: 3,
+                title: "BMW M5 CS (F90) Frozen Deep Green Metallic",
+                brand: "GT Spirit",
+                article: "GT-845",
+                scale: "1:18",
+                category: "supercar",
+                tags: ["1:18", "supercar", "exclusive"],
+                priceWas: 2200000,
+                priceNow: 1890000,
+                stock: 4,
+                weight: 1.2,
+                badge: "Eksklyuziv",
+                badgeColor: "#10b981",
+                img: "images/bmw_m5_cs.jpg",
+                specs: {
+                    doors: "High Precision Composite Resina",
+                    weight: "1.2 kg",
+                    material: "Yuqori aniqlikdagi kompozit metall",
+                    scale: "1:18 (Uzunligi 27 sm)",
+                    sound: "Cheklangan tiraj (999 dona)",
+                    origin: "GT Spirit Models"
+                },
+                desc: "Frozen Deep Green noyob mot bo'yoq rangi, Gold Bronze M-Forged poyga disklari, sariq L-simon LED lazer faralar va karbon tomi bilan dunyo kolleksionerlari orzusi."
+            },
+            {
+                id: 4,
+                title: "Lamborghini Revuelto V12 Hybrid Arancio Apodis",
+                brand: "Bburago Plus",
+                article: "BB-21098",
+                scale: "1:24",
+                category: "supercar",
+                tags: ["1:24", "supercar"],
+                priceWas: 720000,
+                priceNow: 590000,
+                stock: 7,
+                weight: 0.58,
+                badge: "Yangi",
+                badgeColor: "#06b6d4",
+                img: "images/lambo_revuelto.jpg",
+                specs: {
+                    doors: "Yuqoriga ochiluvchi lambo-eshiklar",
+                    weight: "580 gr",
+                    material: "Zamak metall korpus",
+                    scale: "1:24 (Uzunligi 21 sm)",
+                    sound: "Ovoz va old/orqa LED faralar",
+                    origin: "Bburago Diecast"
+                },
+                desc: "Lamborghini-ning yangi flagman gibrid V12 giperkari. Yuqoriga ochiluvchi o'ziga xos qaychi eshiklar, shaffof qopqoq ostidagi V12 dvigatel va bosganda yonuvchi LED optika."
+            },
+            {
+                id: 5,
+                title: "Nissan Skyline GT-R (R34) V-Spec II Bayside Blue",
+                brand: "Solido Diecast",
+                article: "SO-18043",
+                scale: "1:18",
+                category: "jdm",
+                tags: ["1:18", "jdm", "retro"],
+                priceWas: 1450000,
+                priceNow: 1250000,
+                stock: 2,
+                weight: 0.98,
+                badge: "Kult Klassika",
+                badgeColor: "#8b5cf6",
+                img: "images/skyline_r34.jpg",
+                specs: {
+                    doors: "Eshiklar to'liq ochiladi, g'ildirak buriladi",
+                    weight: "980 gr",
+                    material: "Og'ir metall diecast",
+                    scale: "1:18 (Uzunligi 26 sm)",
+                    sound: "Statik durdona",
+                    origin: "Solido France"
+                },
+                desc: "Japoniyaning eng mashhur JDM afsonasi — Godzilla! Bayside Blue asl zavod emali, o'ng rulli salon, afsonaviy RB26DETT motori va o'ziga xos orqa doiraviy chiroqlar."
+            },
+            {
+                id: 6,
+                title: "Rolls-Royce Phantom VIII Mansory Edition Black & Gold",
+                brand: "Chezhi Luxury",
+                article: "CZ-8802",
+                scale: "1:24",
+                category: "vip",
+                tags: ["1:24", "vip"],
+                priceWas: 650000,
+                priceNow: 530000,
+                stock: 5,
+                weight: 0.64,
+                badge: "VIP Lyuks",
+                badgeColor: "#f59e0b",
+                img: "images/rolls_royce_phantom.jpg",
+                specs: {
+                    doors: "Barcha 4 ta suitsid eshik + kapot + bagaj",
+                    weight: "640 gr",
+                    material: "Metall + Zamak",
+                    scale: "1:24 (Uzunligi 22 sm)",
+                    sound: "Signal, motor ovozi, yulduzli shift",
+                    origin: "Chezhi Luxury Series"
+                },
+                desc: "Orqaga qarab ochiluvchi qirollik eshiklari, kapot ichiga yashirinadigan Spirit of Ecstasy haykalchasi, salonda yulduzli osmon chiroqlari va eshik ichidagi original soyabon imitatsiyasi."
+            },
+            {
+                id: 7,
+                title: "Toyota Land Cruiser 300 GR Sport Pearl White",
+                brand: "Diecast Pro",
+                article: "LC-300W",
+                scale: "1:24",
+                category: "suv",
+                tags: ["1:24", "suv"],
+                priceWas: 560000,
+                priceNow: 470000,
+                stock: 8,
+                weight: 0.55,
+                badge: "Bestseller",
+                badgeColor: "#10b981",
+                img: "images/toyota_lc300.jpg",
+                specs: {
+                    doors: "Barcha 4 eshik + kapot + orqa bagaj",
+                    weight: "550 gr",
+                    material: "Zamak metall",
+                    scale: "1:24 (Uzunligi 21 sm)",
+                    sound: "Ovoz va chiroq effektlari (Pull-back)",
+                    origin: "Diecast Pro Models"
+                },
+                desc: "O'zbekistondagi eng sevimli yo'ltanlamas. Qor-oq marvarid rang, GR Sport sportiv radiator panjarasi, amortizatsiyali prujinalar, signal ovozi va yorug'liklar."
+            },
+            {
+                id: 8,
+                title: "Ferrari Daytona SP3 Rosso Corsa Signature Series",
+                brand: "Bburago Signature",
+                article: "BB-16912",
+                scale: "1:18",
+                category: "supercar",
+                tags: ["1:18", "supercar", "exclusive"],
+                priceWas: 1490000,
+                priceNow: 1290000,
+                stock: 3,
+                weight: 1.1,
+                badge: "Maranello",
+                badgeColor: "#dc2626",
+                img: "images/ferrari_daytona.jpg",
+                specs: {
+                    doors: "Kapot, orqa dvigatel bo'limi, eshiklar",
+                    weight: "1.1 kg",
+                    material: "Diecast metall + ABS",
+                    scale: "1:18 (Uzunligi 27 sm)",
+                    sound: "Rasmiy Ferrari Litsenziyasi",
+                    origin: "Bburago Signature Edition"
+                },
+                desc: "Ferrari Icona seriyasining toj durdonasi. Gorizontal qovurg'ali orqa qism, ochiluvchi orqa ulkan kapot ostidagi batafsil 6.5L V12 atmosfera motori va ko'k salon qoplamasi."
+            },
+            {
+                id: 9,
+                title: "Mercedes-Maybach S680 Two-tone Obsidian & Gold",
+                brand: "AutoArt VIP",
+                article: "AA-76390",
+                scale: "1:18",
+                category: "vip",
+                tags: ["1:18", "vip", "exclusive"],
+                priceWas: 3200000,
+                priceNow: 2790000,
+                stock: 2,
+                weight: 1.38,
+                badge: "Imperator",
+                badgeColor: "#f59e0b",
+                img: "images/maybach_s680.jpg",
+                specs: {
+                    doors: "To'liq 4 ta eshik, kapot va bagaj ochiladi",
+                    weight: "1.38 kg",
+                    material: "To'liq metall (Zamak)",
+                    scale: "1:18 (Uzunligi 30 sm)",
+                    sound: "Prezident darajasidagi kolleksiya",
+                    origin: "AutoArt Millennium VIP"
+                },
+                desc: "Ikki rangli qo'lda silliqlangan Obsidian Black va Kalahari Gold bo'yog'i, kapot ostida 6.0L V12 Biturbo, to'liq gilamchali yumshoq hashamatli salon va pnevmo podveska imitatsiyasi."
+            },
+            {
+                id: 10,
+                title: "Bugatti Tourbillon Hypercar French Racing Blue & Carbon",
+                brand: "AutoArt",
+                article: "AA-70199",
+                scale: "1:18",
+                category: "supercar",
+                tags: ["1:18", "supercar", "exclusive"],
+                priceWas: 3500000,
+                priceNow: 2990000,
+                stock: 1,
+                weight: 1.3,
+                badge: "Kelajak Giperkari",
+                badgeColor: "#06b6d4",
+                img: "images/bugatti_tourbillon.jpg",
+                specs: {
+                    doors: "Dihedral eshiklar + faol orqa qanot",
+                    weight: "1.3 kg",
+                    material: "Metall va Haqiqiy Karbon tola",
+                    scale: "1:18 (Uzunligi 26 sm)",
+                    sound: "Top-Tier Diecast",
+                    origin: "AutoArt Exclusive"
+                },
+                desc: "Bugattining 1800 ot kuchiga ega yangi V16 gibrid durdonasi. Shveytsariya soatlari uslubidagi skelet priborlar paneli, dihedral ochiluvchi eshiklar va shaffof orqa diffuzor."
+            },
+            {
+                id: 11,
+                title: "Chevrolet Tahoe RST V8 Onyx Black Edition",
+                brand: "Chezhi Diecast",
+                article: "CZ-6671",
+                scale: "1:24",
+                category: "suv",
+                tags: ["1:24", "suv"],
+                priceWas: 620000,
+                priceNow: 495000,
+                stock: 6,
+                weight: 0.62,
+                badge: "Amerika Quvvati",
+                badgeColor: "#ff334b",
+                img: "images/chevrolet_tahoe.jpg",
+                specs: {
+                    doors: "Barcha 4 eshik + kapot + orqa yukxona",
+                    weight: "620 gr",
+                    material: "Qalin og'ir metall",
+                    scale: "1:24 (Uzunligi 22 sm)",
+                    sound: "V8 dvigatel ovozi, signal, chiroqlar",
+                    origin: "Chezhi Heavy Diecast"
+                },
+                desc: "Toshkent ko'chalarining eng nufuzli giganti! Qora xrom qoplamalar, RST qizil sport nishonlari, ochiluvchi orqa oyna, keng 3 qatorli salon va amortizatsiyali prujinalar."
+            },
+            {
+                id: 12,
+                title: "Audi RS6 Avant Quattro (C8) Nardo Grey",
+                brand: "GT Spirit",
+                article: "GT-920",
+                scale: "1:18",
+                category: "supercar",
+                tags: ["1:18", "supercar", "exclusive"],
+                priceWas: 2350000,
+                priceNow: 1980000,
+                stock: 3,
+                weight: 1.18,
+                badge: "Bo'ri Vagonda",
+                badgeColor: "#94a3b8",
+                img: "images/audi_rs6.jpg",
+                specs: {
+                    doors: "High Precision Composite Resina",
+                    weight: "1.18 kg",
+                    material: "Yuqori aniqlikdagi kompozit metall",
+                    scale: "1:18 (Uzunligi 27 sm)",
+                    sound: "Cheklangan 1500 dona tiraj",
+                    origin: "GT Spirit Models"
+                },
+                desc: "Afsonaviy Nardo Grey rangi, kengaytirilgan RS qanotlari, 22-dyuymli trapetsiya disklar, qora optika paketi va orqa ulkan oval diffuzor quvurlari."
+            },
+            {
+                id: 13,
+                title: "Ford Mustang Shelby GT500 Grabber Blue",
+                brand: "Maisto Special",
+                article: "MS-31388",
+                scale: "1:24",
+                category: "retro",
+                tags: ["1:24", "retro", "supercar"],
+                priceWas: 490000,
+                priceNow: 395000,
+                stock: 9,
+                weight: 0.51,
+                badge: "Muskul Kar",
+                badgeColor: "#38bdf8",
+                img: "images/shelby_gt500.jpg",
+                specs: {
+                    doors: "Eshiklar va kapot to'liq ochiladi",
+                    weight: "510 gr",
+                    material: "Diecast metall",
+                    scale: "1:24 (Uzunligi 20 sm)",
+                    sound: "Statik klassika",
+                    origin: "Maisto Special Edition"
+                },
+                desc: "760 ot kuchiga ega supercharged V8 Predator motori bilan afsonaviy Amerika kobra yirtqichi! Oq poyga chiziqlari, Recaro sport o'rindiqlari va kobra emblemasi."
+            },
+            {
+                id: 14,
+                title: "Land Rover Defender 110 V8 Carpathian Edition",
+                brand: "Chezhi Diecast",
+                article: "CZ-9912",
+                scale: "1:24",
+                category: "suv",
+                tags: ["1:24", "suv"],
+                priceWas: 590000,
+                priceNow: 480000,
+                stock: 5,
+                weight: 0.65,
+                badge: "Ekspeditsiya",
+                badgeColor: "#f59e0b",
+                img: "images/defender_110.jpg",
+                specs: {
+                    doors: "5 ta eshik + kapot to'liq ochiladi",
+                    weight: "650 gr",
+                    material: "Metall korpus + ABS detallari",
+                    scale: "1:24 (Uzunligi 21 sm)",
+                    sound: "Ovoz va fardagi LED chiroqlar",
+                    origin: "Chezhi Diecast"
+                },
+                desc: "Ekspeditsiya tomi, zaxira g'ildirak, orqa narvon va mot kulrang Carpathian bo'yoq. Kuchli 5.0L V8 kompressorli dvigatel nusxasi va mustahkam off-road osmasi."
+            },
+            {
+                id: 15,
+                title: "Mercedes-AMG G63 Edition 1 Obsidian Black",
+                brand: "AutoArt",
+                article: "AA-76033",
+                scale: "1:18",
+                category: "suv",
+                tags: ["1:18", "suv", "exclusive"],
+                priceWas: 1850000,
+                priceNow: 1450000,
+                stock: 2,
+                weight: 1.35,
+                badge: "Flagman Gelandewagen",
+                badgeColor: "#ff334b",
+                img: "images/hero_g63.jpg",
+                specs: {
+                    doors: "To'liq 5 eshik va kapot ochiladi",
+                    weight: "1.35 kg (To'liq metall)",
+                    material: "To'liq metall (Diecast)",
+                    scale: "1:18 (Uzunligi 28 sm)",
+                    sound: "Statik litsenziyali model",
+                    origin: "AutoArt Models"
+                },
+                desc: "Do'konimizning faxriy vitrinasi! 1:18 masshtabli Edition 1 qizil chiziqli xrom nishonlar, buriluvchi g'ildiraklar, yumshoq charm salon detallari va ochiluvchi orqa zaxira g'ildirak qopqog'i."
+            }
+        ];
+
+        /* State Management */
+        let currentScaleFilter = 'all';
+        let currentCategoryFilter = 'all';
+        let currentSearchQuery = '';
+        let currentSort = 'featured';
+        let currentViewMode = 'grid';
+
+        let cartState = JSON.parse(localStorage.getItem('minicar_cart') || '[]');
+        let wishlistState = JSON.parse(localStorage.getItem('minicar_wishlist') || '[]');
+        let activeExpressProduct = { title: '', price: 0, img: '' };
+
+        /* ==========================================================================
+           INIT & URL QUERY PARAMETERS
+           ========================================================================== */
+        document.addEventListener('DOMContentLoaded', () => {
+            initUrlParams();
+            updateCartCounter();
+            renderCatalog();
+
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('mainHeader');
+                if (window.scrollY > 30) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+
+        function initUrlParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const scaleParam = urlParams.get('scale');
+            const filterParam = urlParams.get('filter');
+            const queryParam = urlParams.get('q') || urlParams.get('search');
+
+            if (scaleParam) {
+                if (scaleParam === '1-18' || scaleParam === '1:18') {
+                    currentScaleFilter = '1:18';
+                    updateScalePillsUI('1:18');
+                } else if (scaleParam === '1-24' || scaleParam === '1:24') {
+                    currentScaleFilter = '1:24';
+                    updateScalePillsUI('1:24');
+                }
+            }
+
+            if (filterParam) {
+                currentCategoryFilter = filterParam;
+                updateCategoryTabsUI(filterParam);
+            }
+
+            if (queryParam) {
+                currentSearchQuery = queryParam.trim();
+                document.getElementById('catalogSearchInput').value = currentSearchQuery;
+                document.getElementById('searchClearBtn').style.display = 'flex';
+            }
+        }
+
+        /* ==========================================================================
+           CATALOG FILTERING & RENDERING ENGINE
+           ========================================================================== */
+        function renderCatalog() {
+            const gridEl = document.getElementById('catalogCardsGrid');
+            const statsEl = document.getElementById('filterResultCount');
+            const resetBtn = document.getElementById('resetFiltersBtn');
+
+            let filtered = PRODUCTS_DATA.filter(item => {
+                // Scale filter
+                if (currentScaleFilter !== 'all' && item.scale !== currentScaleFilter) {
+                    return false;
+                }
+
+                // Category filter
+                if (currentCategoryFilter !== 'all') {
+                    if (currentCategoryFilter === 'exclusive') {
+                        if (!item.tags.includes('exclusive')) return false;
+                    } else if (currentCategoryFilter === 'jdm') {
+                        if (!item.tags.includes('jdm')) return false;
+                    } else if (currentCategoryFilter === 'retro') {
+                        if (!item.tags.includes('retro')) return false;
+                    } else if (item.category !== currentCategoryFilter && !item.tags.includes(currentCategoryFilter)) {
+                        return false;
+                    }
+                }
+
+                // Search query
+                if (currentSearchQuery) {
+                    const q = currentSearchQuery.toLowerCase();
+                    const matchTitle = item.title.toLowerCase().includes(q);
+                    const matchBrand = item.brand.toLowerCase().includes(q);
+                    const matchArticle = item.article.toLowerCase().includes(q);
+                    const matchScale = item.scale.toLowerCase().includes(q);
+                    const matchTags = item.tags.some(t => t.toLowerCase().includes(q));
+                    if (!matchTitle && !matchBrand && !matchArticle && !matchScale && !matchTags) {
+                        return false;
+                    }
+                }
+
+                return true;
+            });
+
+            // Sorting
+            filtered.sort((a, b) => {
+                if (currentSort === 'price-asc') return a.priceNow - b.priceNow;
+                if (currentSort === 'price-desc') return b.priceNow - a.priceNow;
+                if (currentSort === 'weight-desc') return b.weight - a.weight;
+                if (currentSort === 'name-asc') return a.title.localeCompare(b.title);
+                return a.id - b.id; // Featured
+            });
+
+            // Update stats
+            statsEl.textContent = filtered.length;
+            const hasActiveFilter = (currentScaleFilter !== 'all' || currentCategoryFilter !== 'all' || currentSearchQuery !== '' || currentSort !== 'featured');
+            resetBtn.style.display = hasActiveFilter ? 'inline-flex' : 'none';
+
+            // Empty state
+            if (filtered.length === 0) {
+                gridEl.innerHTML = `
+                    <div class="empty-results-box">
+                        <div style="font-size:3rem; margin-bottom:12px;">🔍</div>
+                        <h3>Hech qanday model topilmadi</h3>
+                        <p>Qidiruv so'zini o'zgartirib ko'ring yoki filtrlarni tozalang.</p>
+                        <button class="btn-order-express" onclick="resetAllFilters()">
+                            Filtrlarni Boshlang'ich Holatga Qaytarish
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+
+            // Render cards
+            gridEl.innerHTML = filtered.map(item => {
+                const isWishlisted = wishlistState.includes(item.id);
+                return `
+                    <div class="product-card" id="card-${item.id}">
+                        <div class="product-card-badge">
+                            <span class="tag-scale">${item.scale} Scale</span>
+                            <span class="tag-status" style="background:${item.badgeColor}; color:#fff;">${item.badge}</span>
+                        </div>
+
+                        <button class="wishlist-heart-btn ${isWishlisted ? 'active' : ''}" onclick="toggleWishlist(${item.id}, '${item.title.replace(/'/g, "\\'")}', this)" title="Sevimlilarga qo'shish">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        </button>
+
+                        <div class="product-img-wrapper" onclick="openQuickViewModal(${item.id})" title="Tezkor ko'rish uchun bosing">
+                            <img src="${item.img}" alt="${item.title}" loading="lazy">
+                            <div class="quick-view-overlay-btn">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                <span>Tezkor Ko'rish</span>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <div>
+                                <div class="product-meta-row">
+                                    <span class="product-brand">${item.brand}</span>
+                                    <span>Art. #${item.article}</span>
+                                </div>
+                                <h3 class="product-title">
+                                    <a href="product.html?id=${item.id}" title="${item.title}">${item.title}</a>
+                                </h3>
+                                <div class="product-specs-mini">
+                                    <span>🚪 ${item.specs.doors}</span>
+                                    <span>⚖️ ${item.specs.weight}</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="product-price-row">
+                                    <div class="product-price-box">
+                                        <span class="price-was">${(item.priceWas).toLocaleString()} UZS</span>
+                                        <span class="price-now">${(item.priceNow).toLocaleString()} UZS</span>
+                                    </div>
+                                    <span class="stock-indicator">${item.stock} dona qoldi</span>
+                                </div>
+
+                                <div class="product-card-actions">
+                                    <button class="btn-add-cart" onclick="addToCart('${item.title.replace(/'/g, "\\'")}', ${item.priceNow}, '${item.scale}', '${item.brand}', '${item.img}')">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                        <span>Savatga</span>
+                                    </button>
+                                    <button class="btn-quick-buy-card" onclick="openExpressOrderModal('${item.title.replace(/'/g, "\\'")}', ${item.priceNow}, '${item.img}')" title="1-Click Tezkor Xarid">⚡</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        /* Filter Handlers */
+        function setScaleFilter(scale, btn) {
+            currentScaleFilter = scale;
+            updateScalePillsUI(scale);
+            renderCatalog();
+        }
+
+        function updateScalePillsUI(scale) {
+            document.querySelectorAll('#scalePillsRow .scale-pill-btn').forEach(b => {
+                if (b.getAttribute('data-scale') === scale) {
+                    b.classList.add('active');
+                } else {
+                    b.classList.remove('active');
+                }
+            });
+        }
+
+        function setCategoryFilter(cat, btn) {
+            currentCategoryFilter = cat;
+            updateCategoryTabsUI(cat);
+            renderCatalog();
+        }
+
+        function updateCategoryTabsUI(cat) {
+            document.querySelectorAll('#categoryFilterTags .cat-tag-btn').forEach(b => {
+                if (b.getAttribute('data-cat') === cat) {
+                    b.classList.add('active');
+                } else {
+                    b.classList.remove('active');
+                }
+            });
+        }
+
+        function handleSearchInput(val) {
+            currentSearchQuery = val.trim();
+            document.getElementById('searchClearBtn').style.display = currentSearchQuery ? 'flex' : 'none';
+            renderCatalog();
+        }
+
+        function clearSearch() {
+            document.getElementById('catalogSearchInput').value = '';
+            document.getElementById('searchClearBtn').style.display = 'none';
+            currentSearchQuery = '';
+            renderCatalog();
+        }
+
+        function handleSortChange(sortVal) {
+            currentSort = sortVal;
+            renderCatalog();
+        }
+
+        function setViewMode(mode) {
+            currentViewMode = mode;
+            const gridEl = document.getElementById('catalogCardsGrid');
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+
+            gridEl.classList.remove('compact-view', 'list-view');
+
+            if (mode === 'grid') {
+                document.getElementById('viewGridBtn').classList.add('active');
+            } else if (mode === 'compact') {
+                document.getElementById('viewCompactBtn').classList.add('active');
+                gridEl.classList.add('compact-view');
+            } else if (mode === 'list') {
+                document.getElementById('viewListBtn').classList.add('active');
+                gridEl.classList.add('list-view');
+            }
+        }
+
+        function resetAllFilters() {
+            currentScaleFilter = 'all';
+            currentCategoryFilter = 'all';
+            currentSearchQuery = '';
+            currentSort = 'featured';
+
+            document.getElementById('catalogSearchInput').value = '';
+            document.getElementById('searchClearBtn').style.display = 'none';
+            document.getElementById('catalogSortSelect').value = 'featured';
+
+            updateScalePillsUI('all');
+            updateCategoryTabsUI('all');
+            renderCatalog();
+            showToast("✨ Barcha filtrlar tozalab tiklandi");
+        }
+
+        function focusSearchInput() {
+            const input = document.getElementById('catalogSearchInput');
+            input.focus();
+            input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        /* ==========================================================================
+           QUICK VIEW MODAL (TEZKOR KO'RISH)
+           ========================================================================== */
+        function openQuickViewModal(productId) {
+            const item = PRODUCTS_DATA.find(p => p.id === productId);
+            if (!item) return;
+
+            const contentEl = document.getElementById('quickViewContent');
+            contentEl.innerHTML = `
+                <div class="qv-grid">
+                    <div class="qv-media-col">
+                        <div class="qv-main-img-box">
+                            <img src="${item.img}" alt="${item.title}" id="qvModalMainImage">
+                        </div>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="tag-scale">${item.scale} Original Masshtab</span>
+                            <span class="stock-indicator">Omborda: ${item.stock} dona mavjud</span>
+                        </div>
+                    </div>
+
+                    <div class="qv-details-col">
+                        <div>
+                            <span class="qv-brand-badge">${item.brand} • Art. #${item.article}</span>
+                            <h2 class="qv-title">${item.title}</h2>
+                            <p class="qv-desc">${item.desc}</p>
+
+                            <div class="qv-specs-table">
+                                <div class="qv-spec-row">
+                                    <span class="qv-spec-label">Masshtab:</span>
+                                    <span class="qv-spec-val">${item.specs.scale}</span>
+                                </div>
+                                <div class="qv-spec-row">
+                                    <span class="qv-spec-label">Material & Korpus:</span>
+                                    <span class="qv-spec-val">${item.specs.material}</span>
+                                </div>
+                                <div class="qv-spec-row">
+                                    <span class="qv-spec-label">Vazni:</span>
+                                    <span class="qv-spec-val">${item.specs.weight}</span>
+                                </div>
+                                <div class="qv-spec-row">
+                                    <span class="qv-spec-label">Eshik & Kapotlar:</span>
+                                    <span class="qv-spec-val">${item.specs.doors}</span>
+                                </div>
+                                <div class="qv-spec-row">
+                                    <span class="qv-spec-label">Ishlab chiqaruvchi:</span>
+                                    <span class="qv-spec-val">${item.specs.origin}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qv-price-cta-row">
+                            <div class="qv-price-box">
+                                <span class="price-was">${(item.priceWas).toLocaleString()} UZS</span>
+                                <div class="price-now">${(item.priceNow).toLocaleString()} UZS</div>
+                            </div>
+
+                            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                                <a href="product.html?id=${item.id}" class="btn-add-cart" style="text-decoration:none;">
+                                    <span>Batafsil Sahifa &rarr;</span>
+                                </a>
+                                <button class="btn-add-cart" onclick="addToCart('${item.title.replace(/'/g, "\\'")}', ${item.priceNow}, '${item.scale}', '${item.brand}', '${item.img}'); closeQuickViewModal();">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                    <span>Savatga</span>
+                                </button>
+                                <button class="btn-order-express" onclick="closeQuickViewModal(); openExpressOrderModal('${item.title.replace(/'/g, "\\'")}', ${item.priceNow}, '${item.img}');">
+                                    <span>1-Click Xarid</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('quickViewBackdrop').classList.add('open');
+        }
+
+        function closeQuickViewModal() {
+            document.getElementById('quickViewBackdrop').classList.remove('open');
+        }
+
+        /* ==========================================================================
+           WISHLIST SYSTEM (LOCALSTORAGE PERSISTENCE)
+           ========================================================================== */
+        function toggleWishlist(id, title, btn) {
+            const index = wishlistState.indexOf(id);
+            if (index > -1) {
+                wishlistState.splice(index, 1);
+                btn.classList.remove('active');
+                showToast(`💔 "${title}" sevimlilardan olib tashlandi`);
+            } else {
+                wishlistState.push(id);
+                btn.classList.add('active');
+                showToast(`❤️ "${title}" sevimlilarga qo'shildi`);
+            }
+            localStorage.setItem('minicar_wishlist', JSON.stringify(wishlistState));
+        }
+
+        /* ==========================================================================
+           CART SYSTEM (SHARED WITH INDEX.HTML)
+           ========================================================================== */
+        function addToCart(title, price, scale, brand, img) {
+            const existingIndex = cartState.findIndex(item => item.title === title);
+            if (existingIndex > -1) {
+                cartState[existingIndex].quantity += 1;
+            } else {
+                cartState.push({
+                    title: title,
+                    price: price,
+                    scale: scale,
+                    brand: brand,
+                    img: img,
+                    quantity: 1
+                });
+            }
+            saveCart();
+            updateCartCounter();
+            showToast(`🛒 "${title}" savatga qo'shildi!`);
+        }
+
+        function saveCart() {
+            localStorage.setItem('minicar_cart', JSON.stringify(cartState));
+        }
+
+        function updateCartCounter() {
+            const count = cartState.reduce((sum, item) => sum + item.quantity, 0);
+            const badge = document.getElementById('headerCartCount');
+            if (badge) {
+                badge.textContent = count;
+                badge.style.display = count > 0 ? 'flex' : 'none';
+            }
+        }
+
+        function openCartDrawer() {
+            renderDrawerCart();
+            document.getElementById('cartDrawer').classList.add('open');
+            document.getElementById('cartDrawerBackdrop').classList.add('open');
+        }
+
+        function closeCartDrawer() {
+            document.getElementById('cartDrawer').classList.remove('open');
+            document.getElementById('cartDrawerBackdrop').classList.remove('open');
+        }
+
+        function renderDrawerCart() {
+            const list = document.getElementById('drawerItemsList');
+            const totalEl = document.getElementById('drawerTotalPrice');
+            list.innerHTML = '';
+
+            if (cartState.length === 0) {
+                list.innerHTML = `
+                    <div style="text-align:center; padding:40px 10px; color:var(--text-dim);">
+                        <div style="font-size:2.8rem; margin-bottom:14px;">🛒</div>
+                        <h4 style="color:#fff; margin-bottom:6px;">Savatingiz hozircha bo'sh</h4>
+                        <p style="font-size:0.85rem;">Katalogdan o'zingizga ma'qul avtomobil modelini tanlang</p>
+                    </div>
+                `;
+                totalEl.textContent = '0 UZS';
+                return;
+            }
+
+            let grandTotal = 0;
+            cartState.forEach((item, index) => {
+                grandTotal += item.price * item.quantity;
+                const thumb = item.img || 'images/hero_g63.jpg';
+                const row = document.createElement('div');
+                row.className = 'drawer-item';
+                row.innerHTML = `
+                    <div class="drawer-item-img">
+                        <img src="${thumb}" alt="${item.title}" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="drawer-item-details">
+                        <div class="drawer-item-title">${item.title}</div>
+                        <div class="drawer-item-price">${(item.price).toLocaleString()} UZS</div>
+                        <div class="drawer-qty-controls">
+                            <button class="btn-qty" onclick="changeQty(${index}, -1)">-</button>
+                            <span style="font-size:0.85rem; font-weight:700; color:#fff;">${item.quantity}</span>
+                            <button class="btn-qty" onclick="changeQty(${index}, 1)">+</button>
+                            <button onclick="removeFromCart(${index})" style="margin-left:auto; font-size:0.75rem; color:#ef4444; text-decoration:underline;">O'chirish</button>
+                        </div>
+                    </div>
+                `;
+                list.appendChild(row);
+            });
+
+            totalEl.textContent = grandTotal.toLocaleString() + ' UZS';
+        }
+
+        function changeQty(index, delta) {
+            cartState[index].quantity += delta;
+            if (cartState[index].quantity <= 0) {
+                cartState.splice(index, 1);
+            }
+            saveCart();
+            updateCartCounter();
+            renderDrawerCart();
+        }
+
+        function removeFromCart(index) {
+            cartState.splice(index, 1);
+            saveCart();
+            updateCartCounter();
+            renderDrawerCart();
+        }
+
+        function checkoutFromDrawer() {
+            if (cartState.length === 0) {
+                showToast("⚠️ Savatingiz bo'sh!");
+                return;
+            }
+            closeCartDrawer();
+            const summaryTitle = cartState.map(i => `${i.title} (${i.quantity}x)`).join(', ');
+            const total = cartState.reduce((sum, i) => sum + (i.price * i.quantity), 0);
+            openExpressOrderModal(summaryTitle, total, cartState[0].img);
+        }
+
+        /* ==========================================================================
+           TELEGRAM BOT 1-CLICK ORDER DISPATCH (EXPRESS ORDER)
+           ========================================================================== */
+        function openExpressOrderModal(title, price, img) {
+            const thumb = img || 'images/hero_g63.jpg';
+            activeExpressProduct.title = title;
+            activeExpressProduct.price = price;
+            activeExpressProduct.img = thumb;
+
+            document.getElementById('modalProdTitle').textContent = title;
+
+            document.getElementById('modalBodyContent').innerHTML = `
+                <div class="modal-selected-product">
+                    <div class="selected-prod-thumb">
+                        <img src="${thumb}" alt="${title}" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="selected-prod-info">
+                        <h4>${title}</h4>
+                        <p>${price.toLocaleString()} UZS</p>
+                    </div>
+                </div>
+
+                <form id="expressOrderForm" onsubmit="handleExpressOrderSubmit(event)">
+                    <div class="form-group">
+                        <label class="form-label" for="clientName">Ismingiz *</label>
+                        <input type="text" id="clientName" class="form-input" placeholder="Masalan: Azizbek Karimov" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="clientPhone">Telefon Raqamingiz *</label>
+                        <input type="tel" id="clientPhone" class="form-input" placeholder="+998 90 123 45 67" required>
+                        <span class="form-hint">Operatorimiz 5 daqiqada siz bilan bog'lanib buyurtmani tasdiqlaydi.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="clientCity">Yetkazish Manzili *</label>
+                        <input type="text" id="clientCity" class="form-input" placeholder="Toshkent shahar, Yunusobod tumani..." required>
+                    </div>
+
+                    <div class="telegram-direct-note">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                        <span>Ariza to'g'ridan-to'g'ri rasmiy Telegram botimizga yuboriladi!</span>
+                    </div>
+
+                    <button type="submit" class="btn-submit-order" id="submitOrderBtn">
+                        <span>Buyurtmani Tasdiqlash</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </button>
+                </form>
+            `;
+
+            document.getElementById('expressOrderModal').classList.add('open');
+        }
+
+        function closeExpressOrderModal() {
+            document.getElementById('expressOrderModal').classList.remove('open');
+        }
+
+        async function handleExpressOrderSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const city = document.getElementById('clientCity').value.trim();
+            const submitBtn = document.getElementById('submitOrderBtn');
+
+            if (!name || !phone || !city) {
+                alert("Iltimos, barcha maydonlarni to'ldiring!");
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span>Yuborilmoqda...</span> ⏳`;
+
+            const orderId = 'MC-' + Math.floor(100000 + Math.random() * 900000);
+            const dateStr = new Date().toLocaleString('uz-UZ');
+
+            const messageText = 
+`🏎 *YANGI TEZKOR BUYURTMA (KATALOGDAN)* 🏎
+━━━━━━━━━━━━━━━━━━━
+🆔 *Buyurtma ID:* \`${orderId}\`
+📅 *Vaqt:* ${dateStr}
+
+📦 *Tanlangan Model:* ${activeExpressProduct.title}
+💰 *Narxi:* ${activeExpressProduct.price.toLocaleString()} UZS
+
+👤 *Mijoz:* ${name}
+📞 *Telefon:* [${phone}](tel:${phone.replace(/\s+/g, '')})
+📍 *Manzil:* ${city}
+━━━━━━━━━━━━━━━━━━━
+🌐 *Manba:* MiniCarCollectionUz Showroom (Katalog Sahifasi)
+🤖 *Bot Gateway:* MiniCar Official Bot`;
+
+            const apiUrl = `https://api.telegram.org/bot${TELEGRAM_CONFIG.BOT_TOKEN}/sendMessage`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CONFIG.ADMIN_CHAT_ID,
+                        text: messageText,
+                        parse_mode: 'Markdown'
+                    })
+                });
+
+                const data = await response.json();
+                console.log("Telegram API javobi:", data);
+                renderSuccessReceipt(orderId, name, phone, city, activeExpressProduct);
+            } catch (error) {
+                console.warn("Telegram API yuborishda xatolik:", error);
+                renderSuccessReceipt(orderId, name, phone, city, activeExpressProduct);
+            }
+        }
+
+        function renderSuccessReceipt(orderId, name, phone, city, product) {
+            const bodyEl = document.getElementById('modalBodyContent');
+            bodyEl.innerHTML = `
+                <div class="order-success-card">
+                    <div class="success-checkmark">✓</div>
+                    <h3 style="font-size:1.35rem; color:#fff; margin-bottom:8px;">Buyurtmangiz Qabul Qilindi!</h3>
+                    <p style="font-size:0.88rem; color:var(--text-muted);">
+                        Arizangiz Telegram botimizga yuborildi. Operatorimiz tez orada siz bilan bog'lanadi.
+                    </p>
+
+                    <div class="receipt-box">
+                        <div class="receipt-row">
+                            <span style="color:var(--text-dim);">Buyurtma Cheki:</span>
+                            <strong style="color:var(--primary);">${orderId}</strong>
+                        </div>
+                        <div class="receipt-row">
+                            <span style="color:var(--text-dim);">Model:</span>
+                            <span style="color:#fff;">${product.title}</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span style="color:var(--text-dim);">Summa:</span>
+                            <strong style="color:#fff;">${product.price.toLocaleString()} UZS</strong>
+                        </div>
+                        <div class="receipt-row">
+                            <span style="color:var(--text-dim);">Qabul qiluvchi:</span>
+                            <span style="color:#fff;">${name} (${phone})</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span style="color:var(--text-dim);">Yetkazish manzili:</span>
+                            <span style="color:#fff;">${city}</span>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; flex-direction:column; gap:10px;">
+                        <a href="https://t.me/MiniCarCollectionUz" target="_blank" rel="noopener noreferrer" class="btn-submit-order" style="text-decoration:none;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                            <span>Telegram Kanalimizga O'tish</span>
+                        </a>
+                        <button onclick="closeExpressOrderModal()" class="btn-add-cart" style="justify-content:center;">
+                            Yopish
+                        </button>
+                    </div>
+                </div>
+            `;
+            showToast("✅ Buyurtma muvaffaqiyatli jo'natildi!");
+        }
+
+        /* Generic Backdrop Click */
+        function handleBackdropClick(event, backdropId) {
+            if (event.target.id === backdropId) {
+                document.getElementById(backdropId).classList.remove('open');
+            }
+        }
+
+        /* Toast System */
+        function showToast(message) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'toast-msg';
+            toast.innerHTML = `<span>${message}</span>`;
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(20px)';
+                toast.style.transition = 'all 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+    </script>
+</body>
+</html>

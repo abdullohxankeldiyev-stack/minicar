@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MiniCarCollectionUz - O'zbekistondagi eng yirik masshtabli avtomobil modellari shourumi va do'koni. AutoArt, Minichamps, Bburago rasmiy litsenziyali kolleksion diecast modellar tarixi, sifati va kafolati.">
+    <meta name="keywords" content="MiniCarCollectionUz haqida, diecast showroom toshkent, autoart uzbekistan, minichamps toshkent, kolleksion mashinalar do'koni, masshtabli avtomobillar kafolati">
+    <meta name="author" content="MiniCarCollectionUz">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Biz Haqimizda & Kafolat | MiniCarCollectionUz">
+    <meta property="og:description" content="Haqiqiy avtomobillar. Miniatyuradagi san'at durdonasi. Toshkentdagi premium diecast shourumi va sifat kafolati.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t.me/MiniCarCollectionUz">
+
+    <title>Biz Haqimizda & Sifat Kafolati | MiniCarCollectionUz</title>
+
+    <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           1. ROOT DESIGN SYSTEM (SHARED WITH ENTIRE ECOSYSTEM)
+           ========================================================================== */
+        :root {
+            --bg-body: #080a0f;
+            --bg-surface: #0f131a;
+            --bg-card: #151a24;
+            --bg-card-hover: #1c2230;
+            --bg-glass: rgba(18, 23, 33, 0.78);
+            --bg-glass-heavy: rgba(10, 13, 19, 0.94);
+            --primary: #ff334b;
+            --primary-glow: rgba(255, 51, 75, 0.45);
+            --primary-dark: #d61f35;
+            --gold: #f59e0b;
+            --gold-glow: rgba(245, 158, 11, 0.35);
+            --cyan: #06b6d4;
+            --accent-green: #10b981;
+            --purple: #8b5cf6;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-medium: rgba(255, 255, 255, 0.15);
+            --border-accent: rgba(255, 51, 75, 0.35);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --font-display: 'Syne', sans-serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --max-w: 1380px;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+            --shadow-glow: 0 0 25px var(--primary-glow);
+        }
+
+        /* Resets */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; color-scheme: dark; }
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(255, 51, 75, 0.07) 0%, transparent 40%),
+                radial-gradient(circle at 90% 40%, rgba(245, 158, 11, 0.06) 0%, transparent 45%),
+                linear-gradient(180deg, #080a0f 0%, #0d1118 100%);
+            min-height: 100vh;
+        }
+        a { color: inherit; text-decoration: none; transition: color var(--transition-fast); }
+        button { cursor: pointer; border: none; outline: none; background: none; font-family: inherit; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+        .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+        /* Badge Utilities */
+        .badge-pulse {
+            display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px;
+            background: rgba(255, 51, 75, 0.12); border: 1px solid var(--border-accent);
+            border-radius: 999px; font-size: 0.8rem; font-weight: 700; color: var(--primary);
+            text-transform: uppercase; letter-spacing: 0.08em;
+        }
+        .pulse-dot {
+            width: 8px; height: 8px; border-radius: 50%; background: var(--primary);
+            box-shadow: 0 0 10px var(--primary); animation: pulseAnim 1.6s infinite ease-in-out;
+        }
+        @keyframes pulseAnim {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.5; }
+        }
+
+        /* ==========================================================================
+           2. HEADER & NAVIGATION
+           ========================================================================== */
+        .ticker-bar {
+            background: linear-gradient(90deg, #090c12, #141924, #090c12);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 8px 0; font-size: 0.78rem; color: var(--text-muted);
+        }
+        .ticker-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .ticker-left { display: flex; align-items: center; gap: 20px; }
+        .ticker-item { display: inline-flex; align-items: center; gap: 6px; }
+        .ticker-item svg { color: var(--gold); }
+        .ticker-right { display: flex; align-items: center; gap: 18px; }
+        .telegram-pill-link {
+            display: inline-flex; align-items: center; gap: 6px; color: #38bdf8;
+            font-weight: 600; transition: transform var(--transition-fast);
+        }
+        .telegram-pill-link:hover { transform: translateY(-1px); color: #7dd3fc; }
+
+        .main-header {
+            position: sticky; top: 0; z-index: 1000;
+            background: var(--bg-glass-heavy); backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border-subtle);
+            transition: all var(--transition-smooth);
+        }
+        .main-header.scrolled {
+            box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+            border-bottom-color: rgba(255, 51, 75, 0.25);
+        }
+        .header-content {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 84px; gap: 24px;
+        }
+        .brand-logo { display: flex; align-items: center; gap: 12px; user-select: none; }
+        .logo-emblem {
+            width: 46px; height: 46px; background: linear-gradient(135deg, #ff334b, #991b1b);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            color: #fff; box-shadow: 0 6px 18px rgba(255, 51, 75, 0.4);
+            position: relative; overflow: hidden;
+        }
+        .logo-emblem::after {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: linear-gradient(60deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(25deg); animation: shineSweep 4s infinite;
+        }
+        @keyframes shineSweep {
+            0% { transform: translateX(-150%) rotate(25deg); }
+            25%, 100% { transform: translateX(150%) rotate(25deg); }
+        }
+        .logo-text h1 {
+            font-family: var(--font-display); font-size: 1.35rem; font-weight: 800;
+            letter-spacing: -0.02em; line-height: 1.1;
+        }
+        .logo-text h1 span { color: var(--primary); }
+        .logo-subtitle {
+            font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--gold); font-weight: 700;
+        }
+
+        .desktop-nav { display: flex; align-items: center; gap: 8px; }
+        .nav-link {
+            padding: 10px 16px; font-size: 0.92rem; font-weight: 600;
+            color: var(--text-muted); border-radius: var(--radius-sm);
+            transition: all var(--transition-fast); position: relative;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-main); background: rgba(255, 255, 255, 0.05);
+        }
+        .nav-link.active::after {
+            content: ''; position: absolute; bottom: 4px; left: 16px; right: 16px;
+            height: 2px; background: var(--primary); border-radius: 2px;
+            box-shadow: 0 0 8px var(--primary);
+        }
+
+        .header-actions { display: flex; align-items: center; gap: 14px; }
+        .icon-action-btn {
+            position: relative; width: 44px; height: 44px; display: flex;
+            align-items: center; justify-content: center; background: var(--bg-card);
+            border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+            color: var(--text-main); transition: all var(--transition-fast);
+        }
+        .icon-action-btn:hover {
+            border-color: var(--primary); color: var(--primary);
+            box-shadow: 0 0 15px rgba(255,51,75,0.25); transform: translateY(-2px);
+        }
+        .cart-badge {
+            position: absolute; top: -4px; right: -4px; background: var(--primary);
+            color: #fff; font-size: 0.72rem; font-weight: 800; width: 20px; height: 20px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            border: 2px solid var(--bg-surface); box-shadow: 0 0 8px var(--primary);
+        }
+        .btn-order-express {
+            background: linear-gradient(135deg, var(--primary), #b91c1c); color: #fff;
+            padding: 10px 20px; border-radius: var(--radius-md); font-weight: 700;
+            font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px;
+            box-shadow: 0 6px 20px rgba(255, 51, 75, 0.35); transition: all var(--transition-smooth);
+        }
+        .btn-order-express:hover {
+            transform: translateY(-2px); box-shadow: 0 10px 25px rgba(255, 51, 75, 0.5);
+            filter: brightness(1.1);
+        }
+
+        /* ==========================================================================
+           3. ABOUT HERO SECTION
+           ========================================================================== */
+        .about-hero {
+            position: relative; padding: 60px 0 40px; text-align: center;
+            background: radial-gradient(circle at 50% -20%, rgba(255, 51, 75, 0.15), transparent 70%);
+        }
+        .about-hero-inner { max-width: 860px; margin: 0 auto; }
+        .about-hero-title {
+            font-family: var(--font-display); font-size: 3.2rem; font-weight: 800;
+            color: #fff; letter-spacing: -0.02em; line-height: 1.15; margin: 16px 0 18px;
+        }
+        .about-hero-title span {
+            background: linear-gradient(135deg, #ffffff 30%, #ff6b7d 80%, #f59e0b 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .about-hero-desc {
+            font-size: 1.12rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 30px;
+        }
+
+        .stats-ribbon-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 36px;
+        }
+        .stat-card-box {
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 22px 16px; text-align: center;
+            transition: all var(--transition-smooth);
+        }
+        .stat-card-box:hover {
+            border-color: var(--primary); transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        .stat-card-number {
+            font-family: var(--font-display); font-size: 2.2rem; font-weight: 800;
+            color: #fff; margin-bottom: 4px;
+        }
+        .stat-card-number span { color: var(--primary); }
+        .stat-card-label { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+
+        /* ==========================================================================
+           4. SHOWROOM SHOWCASE (NANO BANANA GENERATED IMAGE)
+           ========================================================================== */
+        .showroom-feature-section { padding: 70px 0; }
+        .showroom-feature-grid {
+            display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 46px; align-items: center;
+        }
+        .showroom-photo-wrapper {
+            position: relative; border-radius: var(--radius-xl); overflow: hidden;
+            border: 1px solid var(--border-medium); box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+        }
+        .showroom-photo-wrapper img {
+            width: 100%; height: auto; display: block; transition: transform 0.6s ease;
+        }
+        .showroom-photo-wrapper:hover img { transform: scale(1.04); }
+        .showroom-floating-label {
+            position: absolute; bottom: 20px; left: 20px; right: 20px;
+            background: rgba(10, 14, 22, 0.88); backdrop-filter: blur(12px);
+            border: 1px solid var(--border-medium); border-radius: var(--radius-md);
+            padding: 14px 18px; display: flex; justify-content: space-between; align-items: center;
+        }
+        .showroom-floating-label h4 { font-size: 0.95rem; font-weight: 700; color: #fff; }
+        .showroom-floating-label span { font-size: 0.78rem; color: var(--gold); font-weight: 600; }
+
+        .showroom-story-text h2 {
+            font-family: var(--font-display); font-size: 2.4rem; font-weight: 800;
+            line-height: 1.2; color: #fff; margin-bottom: 18px;
+        }
+        .showroom-story-text p {
+            font-size: 1rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;
+        }
+
+        /* ==========================================================================
+           5. DIECAST CRAFTSMANSHIP & TECHNOLOGY (MACRO PHOTOS)
+           ========================================================================== */
+        .craftsmanship-section { padding: 40px 0 80px; }
+        .section-header-centered {
+            text-align: center; max-width: 720px; margin: 0 auto 50px;
+        }
+        .section-header-centered h2 {
+            font-family: var(--font-display); font-size: 2.3rem; font-weight: 800;
+            color: #fff; margin: 12px 0 14px;
+        }
+        .section-header-centered p {
+            font-size: 1.02rem; color: var(--text-muted); line-height: 1.6;
+        }
+
+        .craft-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+        }
+        .craft-card {
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column;
+            transition: all var(--transition-smooth);
+        }
+        .craft-card:hover {
+            transform: translateY(-8px); border-color: var(--primary);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.7), 0 0 20px rgba(255, 51, 75, 0.2);
+        }
+        .craft-card-img-box {
+            width: 100%; height: 210px; overflow: hidden; background: #000;
+        }
+        .craft-card-img-box img {
+            width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-smooth);
+        }
+        .craft-card:hover .craft-card-img-box img { transform: scale(1.08); }
+        .craft-card-body { padding: 22px; flex-grow: 1; display: flex; flex-direction: column; }
+        .craft-card-step {
+            font-size: 0.72rem; font-weight: 800; color: var(--gold); text-transform: uppercase;
+            letter-spacing: 0.1em; margin-bottom: 6px; display: block;
+        }
+        .craft-card-title {
+            font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
+            color: #fff; margin-bottom: 10px; line-height: 1.3;
+        }
+        .craft-card-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; }
+
+        /* ==========================================================================
+           6. OFFICIAL BRAND PARTNERSHIPS
+           ========================================================================== */
+        .partnerships-section {
+            padding: 50px 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);
+            background: rgba(255, 255, 255, 0.015);
+        }
+        .brands-showcase-grid {
+            display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-top: 36px;
+        }
+        .brand-box-card {
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 20px 14px; text-align: center;
+            transition: all var(--transition-fast);
+        }
+        .brand-box-card:hover {
+            border-color: var(--gold); transform: translateY(-4px); background: var(--bg-card-hover);
+        }
+        .brand-box-name {
+            font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 4px;
+        }
+        .brand-box-origin { font-size: 0.75rem; color: var(--text-dim); }
+
+        /* ==========================================================================
+           7. 100% QUALITY GUARANTEES & CUSTOMER PROTECTION
+           ========================================================================== */
+        .guarantees-section { padding: 85px 0; }
+        .guarantees-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+        }
+        .guarantee-card {
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl); padding: 36px 28px; transition: all var(--transition-smooth);
+            position: relative; overflow: hidden;
+        }
+        .guarantee-card:hover {
+            border-color: var(--primary); transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+        }
+        .guarantee-icon-wrapper {
+            width: 60px; height: 60px; border-radius: 16px; background: rgba(255, 51, 75, 0.12);
+            border: 1px solid var(--border-accent); display: flex; align-items: center; justify-content: center;
+            color: var(--primary); font-size: 1.6rem; margin-bottom: 22px;
+        }
+        .guarantee-title {
+            font-family: var(--font-display); font-size: 1.3rem; font-weight: 800;
+            color: #fff; margin-bottom: 12px;
+        }
+        .guarantee-text { font-size: 0.92rem; color: var(--text-muted); line-height: 1.65; }
+
+        /* ==========================================================================
+           8. FAQ ACCORDION SECTION
+           ========================================================================== */
+        .faq-section { padding: 40px 0 90px; }
+        .faq-container-narrow { max-width: 860px; margin: 0 auto; }
+        .faq-item {
+            background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); margin-bottom: 14px; overflow: hidden;
+            transition: all var(--transition-fast);
+        }
+        .faq-item:hover { border-color: var(--border-medium); }
+        .faq-item.active { border-color: var(--primary); }
+        .faq-trigger {
+            width: 100%; padding: 20px 24px; display: flex; justify-content: space-between;
+            align-items: center; text-align: left; font-size: 1.05rem; font-weight: 700;
+            color: #fff; cursor: pointer;
+        }
+        .faq-trigger svg { transition: transform var(--transition-fast); color: var(--primary); }
+        .faq-item.active .faq-trigger svg { transform: rotate(180deg); }
+        .faq-content {
+            display: none; padding: 0 24px 22px; font-size: 0.92rem; color: var(--text-muted);
+            line-height: 1.7; border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .faq-item.active .faq-content { display: block; animation: fadeIn 0.3s ease; }
+
+        /* ==========================================================================
+           9. SHOWROOM LOCATION & CONTACT BANNER
+           ========================================================================== */
+        .location-banner-box {
+            background: linear-gradient(135deg, #101520 0%, #0d121c 100%);
+            border: 1px solid var(--border-medium); border-radius: var(--radius-xl);
+            padding: 44px; margin-bottom: 85px; display: grid; grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px; align-items: center; box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        }
+        .location-text h3 {
+            font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 14px;
+        }
+        .location-text p { font-size: 1rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 24px; }
+        .location-info-pills { display: flex; flex-direction: column; gap: 12px; }
+        .loc-pill {
+            display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: var(--text-main);
+        }
+        .loc-pill svg { color: var(--primary); flex-shrink: 0; }
+
+        .location-action-col {
+            display: flex; flex-direction: column; gap: 14px;
+        }
+        .btn-telegram-contact-large {
+            background: linear-gradient(135deg, #0284c7, #0369a1); border-radius: var(--radius-md);
+            padding: 16px 24px; font-weight: 800; font-size: 1rem; color: #fff;
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            box-shadow: 0 8px 25px rgba(2, 132, 199, 0.4); transition: all var(--transition-fast);
+        }
+        .btn-telegram-contact-large:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+        /* Cart Drawer */
+        .cart-drawer-backdrop {
+            position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(6px);
+            z-index: 1500; opacity: 0; visibility: hidden; transition: all var(--transition-smooth);
+        }
+        .cart-drawer-backdrop.open { opacity: 1; visibility: visible; }
+        .cart-drawer {
+            position: fixed; top: 0; right: 0; bottom: 0; width: 100%; max-width: 440px;
+            background: var(--bg-surface); border-left: 1px solid var(--border-medium);
+            z-index: 1600; transform: translateX(100%); transition: transform var(--transition-smooth);
+            display: flex; flex-direction: column; justify-content: space-between; padding: 24px;
+        }
+        .cart-drawer.open { transform: translateX(0); }
+        .drawer-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle);
+        }
+        .drawer-items-list { flex-grow: 1; overflow-y: auto; padding: 18px 0; display: flex; flex-direction: column; gap: 14px; }
+        .drawer-item {
+            display: flex; gap: 12px; background: var(--bg-card); border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md); padding: 12px; align-items: center;
+        }
+        .drawer-item-img {
+            width: 72px; height: 52px; border-radius: var(--radius-sm); overflow: hidden;
+            background: #000; flex-shrink: 0;
+        }
+        .drawer-item-details { flex-grow: 1; min-width: 0; }
+        .drawer-item-title { font-size: 0.85rem; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .drawer-item-price { font-size: 0.86rem; color: var(--primary); font-weight: 800; }
+        .drawer-qty-controls { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+        .btn-qty {
+            width: 24px; height: 24px; border-radius: 4px; background: rgba(255,255,255,0.08);
+            display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;
+        }
+        .drawer-footer { padding-top: 18px; border-top: 1px solid var(--border-subtle); }
+        .drawer-total-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+
+        /* Footer */
+        .main-footer {
+            background: #05070a; border-top: 1px solid var(--border-subtle);
+            padding: 60px 0 30px; margin-top: 40px;
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 40px;
+        }
+        .footer-col h4 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 18px; }
+        .footer-col p { font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a:hover { color: var(--primary); }
+        .footer-bottom {
+            padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.8rem; color: var(--text-dim); flex-wrap: wrap; gap: 12px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1100px) {
+            .showroom-feature-grid { grid-template-columns: 1fr; }
+            .craft-grid { grid-template-columns: repeat(2, 1fr); }
+            .guarantees-grid { grid-template-columns: 1fr; }
+            .brands-showcase-grid { grid-template-columns: repeat(3, 1fr); }
+            .location-banner-box { grid-template-columns: 1fr; }
+            .stats-ribbon-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 680px) {
+            .about-hero-title { font-size: 2.2rem; }
+            .craft-grid { grid-template-columns: 1fr; }
+            .brands-showcase-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats-ribbon-grid { grid-template-columns: 1fr; }
+            .desktop-nav { display: none; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP TICKER BAR -->
+    <div class="ticker-bar">
+        <div class="container ticker-inner">
+            <div class="ticker-left">
+                <span class="ticker-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Original Litsenziyali Diecast Brendlar
+                </span>
+                <span class="ticker-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    O'zbekiston bo'ylab 24-48 soatda bepul yetkazish
+                </span>
+            </div>
+            <div class="ticker-right">
+                <a href="https://t.me/MiniCarCollectionUz" target="_blank" rel="noopener noreferrer" class="telegram-pill-link">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                    Telegram: @MiniCarCollectionUz
+                </a>
+                <span>Aloqa: +998 (90) 123-45-67</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION HEADER -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-content">
+            <a href="index.html" class="brand-logo" title="MiniCarCollectionUz Bosh Sahifa">
+                <div class="logo-emblem">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <path d="M5 17h14v-5l-3-4H8L5 12v5z"/>
+                        <circle cx="7.5" cy="17.5" r="2.5"/>
+                        <circle cx="16.5" cy="17.5" r="2.5"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>MiniCar<span>Collection</span></h1>
+                    <span class="logo-subtitle">Uzbekistan Diecast HQ</span>
+                </div>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Asosiy Menyu">
+                <a href="index.html" class="nav-link">Bosh Sahifa</a>
+                <a href="catalog.html" class="nav-link">Katalog</a>
+                <a href="catalog.html?filter=exclusive" class="nav-link">Eksklyuziv 1:18</a>
+                <a href="cart.html" class="nav-link">Savat</a>
+                <a href="about.html" class="nav-link active">Biz Haqimizda & Kafolat</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="catalog.html" class="icon-action-btn" title="Katalog qidiruviga o'tish">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </a>
+
+                <button class="icon-action-btn" onclick="openCartDrawer()" title="Savatni ko'rish" id="cartOpenBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-badge" id="headerCartCount">0</span>
+                </button>
+
+                <a href="catalog.html" class="btn-order-express">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Katalogga O'tish</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="about-hero">
+        <div class="container about-hero-inner">
+            <span class="badge-pulse">
+                <span class="pulse-dot"></span>
+                2019-yildan buyon O'zbekistonda
+            </span>
+
+            <h1 class="about-hero-title">
+                Haqiqiy Avtomobillar. <br>
+                <span>Miniatyuradagi San'at Durdonasi.</span>
+            </h1>
+
+            <p class="about-hero-desc">
+                <strong>MiniCarCollectionUz</strong> — O'zbekistondagi eng yirik, rasmiy litsenziyali kolleksion masshtabli avtomobil modellari shourumi. Biz afsonaviy AutoArt, Minichamps, Bburago va GT Spirit brendlarining og'ir metall, mukammal detallangan durdonalarini to'g'ridan-to'g'ri ishlab chiqaruvchilardan yetkazib beramiz.
+            </p>
+
+            <!-- Key Stats Ribbon -->
+            <div class="stats-ribbon-grid">
+                <div class="stat-card-box">
+                    <div class="stat-card-number">1,850<span>+</span></div>
+                    <div class="stat-card-label">Mamnun Kolleksionerlar</div>
+                </div>
+                <div class="stat-card-box">
+                    <div class="stat-card-number">250<span>+</span></div>
+                    <div class="stat-card-label">Ombordagi Eksklyuziv Modellar</div>
+                </div>
+                <div class="stat-card-box">
+                    <div class="stat-card-number">100<span>%</span></div>
+                    <div class="stat-card-label">Original Litsenziya Kafolati</div>
+                </div>
+                <div class="stat-card-box">
+                    <div class="stat-card-number">24<span>h</span></div>
+                    <div class="stat-card-label">O'zbekiston Bo'ylab Yetkazish</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLAGSHIP SHOWROOM FEATURE (NANO BANANA GENERATED) -->
+    <section class="container showroom-feature-section">
+        <div class="showroom-feature-grid">
+            <div class="showroom-photo-wrapper">
+                <img src="images/showroom_interior.jpg" alt="MiniCarCollectionUz Toshkent Shourumi" loading="lazy">
+                <div class="showroom-floating-label">
+                    <div>
+                        <h4>MiniCarCollectionUz Flagman Shourumi</h4>
+                        <p style="font-size:0.75rem; color:var(--text-muted);">Toshkent shahar, Mirobod tumani, Nukus ko'chasi 42</p>
+                    </div>
+                    <span>★ 4.9 Yulduz</span>
+                </div>
+            </div>
+
+            <div class="showroom-story-text">
+                <span class="badge-pulse" style="margin-bottom: 12px;">Bizning Tariximiz</span>
+                <h2>Kolleksionerlar Ehtirosidan Yaratilgan Makon</h2>
+                <p>
+                    MiniCarCollectionUz tarixi 2019-yilda bitta 1:18 masshtabli afsonaviy Mercedes-Benz W140 modeliga bo'lgan cheksiz mehrdan boshlangan. Biz har bir avtomobilning shunchaki transport emas, balki muhandislik san'ati va tarix ekanligini his qilamiz.
+                </p>
+                <p>
+                    Bugun bizning Toshkentdagi shourumimiz — yuzlab kolleksionerlar, avto-ishqibozlar va o'z yaqinlariga unutilmas eksklyuziv sovg'a izlayotgan insonlar uchun O'rta Osiyodagi eng yirik diecast galereyasiga aylandi.
+                </p>
+                <div style="display:flex; gap:14px; margin-top:24px;">
+                    <a href="catalog.html" class="btn-order-express">Katalogni Ko'rish &rarr;</a>
+                    <a href="#locationSection" class="btn-order-express" style="background:rgba(255,255,255,0.06); border:1px solid var(--border-medium);">Shourumga Tashrif</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIECAST CRAFTSMANSHIP & TECHNOLOGY (MACRO PHOTOGRAPHY) -->
+    <section class="container craftsmanship-section">
+        <div class="section-header-centered">
+            <span class="badge-pulse">Zamak & Composite Texnologiyasi</span>
+            <h2>Har Bir Millimetrda Mukammallik</h2>
+            <p>
+                Biz taklif etayotgan har bir model oddiy o'yinchoq emas — ular haqiqiy avtomobil zavodlarining rasmiy 3D chizmalari asosida mikron darajasidagi aniqlik bilan yaratilgan durdonalardir.
+            </p>
+        </div>
+
+        <div class="craft-grid">
+            <!-- Card 1: Wheel & Ceramic Brake -->
+            <div class="craft-card">
+                <div class="craft-card-img-box">
+                    <img src="images/diecast_wheel_detail.jpg" alt="Zamak Metall & Tormoz Supportlari" loading="lazy">
+                </div>
+                <div class="craft-card-body">
+                    <span class="craft-card-step">01 / Korpus & Shassi</span>
+                    <h3 class="craft-card-title">Zamak Metall Quyish</h3>
+                    <p class="craft-card-desc">
+                        Sink, alyuminiy va mis qotishmasidan iborat og'ir metall korpus. Har bir model qo'lingizda haqiqiy avtomobil kabi og'ir va mustahkam seziladi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Engine Craftsmanship -->
+            <div class="craft-card">
+                <div class="craft-card-img-box">
+                    <img src="images/diecast_engine_detail.jpg" alt="V8 & V12 Motor Detallashuvi" loading="lazy">
+                </div>
+                <div class="craft-card-body">
+                    <span class="craft-card-step">02 / Motor Bo'limi</span>
+                    <h3 class="craft-card-title">Mikroskopik Dvigatel</h3>
+                    <p class="craft-card-desc">
+                        Ochiladigan kapot ostida V8/V12 motor bloklari, xrom kollektorlar, alohida o'tkazilgan simlar va haqiqiy radiator shlanglari imitatsiyasi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Interior Details -->
+            <div class="craft-card">
+                <div class="craft-card-img-box">
+                    <img src="images/diecast_interior_detail.jpg" alt="Salon Qoplamasi va Rul" loading="lazy">
+                </div>
+                <div class="craft-card-body">
+                    <span class="craft-card-step">03 / Kokpit & Salon</span>
+                    <h3 class="craft-card-title">Qo'lda Tikilgan Salon</h3>
+                    <p class="craft-card-desc">
+                        Haqiqiy charm teksturasiga ega sport o'rindiqlari, buriluvchi g'ildiraklarga ulangan rul, xavfsizlik kamarlari va karbon qoplamalar.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4: Official Plaque & Box -->
+            <div class="craft-card">
+                <div class="craft-card-img-box">
+                    <img src="images/diecast_box_plaque.jpg" alt="Litsenziya va Sertifikat" loading="lazy">
+                </div>
+                <div class="craft-card-body">
+                    <span class="craft-card-step">04 / Rasmiy Sertifikat</span>
+                    <h3 class="craft-card-title">Zavod Plombasi & Vitrina</h3>
+                    <p class="craft-card-desc">
+                        Har bir kolleksion durdona ishlab chiqaruvchi zavod seriya raqami, chang o'tkazmaydigan akril vitrinasi va rasmiy litsenziya pasporti bilan jo'natiladi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFICIAL BRAND PARTNERSHIPS -->
+    <section class="partnerships-section">
+        <div class="container">
+            <div class="section-header-centered" style="margin-bottom: 24px;">
+                <span class="badge-pulse">Global Hamkorlarimiz</span>
+                <h2 style="font-size:2rem;">Dunyoning №1 Diecast Ishlab Chiqaruvchilari</h2>
+                <p>Biz faqat jahon miqyosida tan olingan va avtomobil konsernlari tomonidan rasmiy akkreditatsiyadan o'tgan brendlar bilan ishlaymiz.</p>
+            </div>
+
+            <div class="brands-showcase-grid">
+                <div class="brand-box-card">
+                    <div class="brand-box-name">AutoArt</div>
+                    <div class="brand-box-origin">Yaponiya / Gonkong</div>
+                </div>
+                <div class="brand-box-card">
+                    <div class="brand-box-name">Minichamps</div>
+                    <div class="brand-box-origin">Aachen, Germaniya</div>
+                </div>
+                <div class="brand-box-card">
+                    <div class="brand-box-name">Bburago Plus</div>
+                    <div class="brand-box-origin">Maranello Litsenziyasi</div>
+                </div>
+                <div class="brand-box-card">
+                    <div class="brand-box-name">GT Spirit</div>
+                    <div class="brand-box-origin">Fransiya (Resin VIP)</div>
+                </div>
+                <div class="brand-box-card">
+                    <div class="brand-box-name">Solido</div>
+                    <div class="brand-box-origin">Fransiya (JDM Klassika)</div>
+                </div>
+                <div class="brand-box-card">
+                    <div class="brand-box-name">Chezhi Luxury</div>
+                    <div class="brand-box-origin">Interaktiv Ovoz & Chiroq</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 100% QUALITY GUARANTEES & BUYER PROTECTION -->
+    <section class="container guarantees-section">
+        <div class="section-header-centered">
+            <span class="badge-pulse">Mijoz Manfaatlari Birinchi O'rinda</span>
+            <h2>Bizning Rasmiy Kafolat Standartimiz</h2>
+            <p>Siz har qanday xaridda to'liq himoyalangansiz. Bizning qoidamiz oddiy: mijoz 100% rozi bo'lmaguncha buyurtma tugallanmagan hisoblanadi.</p>
+        </div>
+
+        <div class="guarantees-grid">
+            <!-- Guarantee 1 -->
+            <div class="guarantee-card">
+                <div class="guarantee-icon-wrapper">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="guarantee-title">100% Asl Sifat Kafolati</h3>
+                <p class="guarantee-text">
+                    Biz hech qachon qalbaki (replika) yoki sifatsiz nusxalar bilan ishlamaymiz. Barcha modellar asl zavod qutisida, seriya raqami va ishlab chiqaruvchi transport plombasi bilan keladi.
+                </p>
+            </div>
+
+            <!-- Guarantee 2 -->
+            <div class="guarantee-card">
+                <div class="guarantee-icon-wrapper">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </div>
+                <h3 class="guarantee-title">Tekshirib Olish Huquqi</h3>
+                <p class="guarantee-text">
+                    Kuryer modelni uyingizga olib kelganda, siz posilkani ochib, uning barcha eshiklari, bo'yog'i va butunligini o'z ko'zingiz bilan tekshirib, shundan keyin to'lov qilasiz.
+                </p>
+            </div>
+
+            <!-- Guarantee 3 -->
+            <div class="guarantee-card">
+                <div class="guarantee-icon-wrapper">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                </div>
+                <h3 class="guarantee-title">Xavfsiz 3 Qavatli Qadoq</h3>
+                <p class="guarantee-text">
+                    Viloyatlarga yuboriladigan barcha modellar maxsus qalin penoplast, havoli pufakchali plyonka va zarbaga chidamli transport g'ilofiga joylanadi. 0% shikastlanish kafolatlangan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXECUTIVE GIFT PACKAGING SPOTLIGHT (NANO BANANA GENERATED) -->
+    <section class="container" style="padding-bottom: 80px;">
+        <div style="background:linear-gradient(135deg, #121722 0%, #0d121c 100%); border:1px solid rgba(245, 158, 11, 0.35); border-radius:var(--radius-xl); padding:44px; display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+            <div>
+                <span class="badge-pulse" style="margin-bottom: 12px; background:rgba(245,158,11,0.15); color:var(--gold); border-color:rgba(245,158,11,0.4);">VIP Sovg'a Xizmati</span>
+                <h2 style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; color:#fff; margin-bottom:14px;">Rahbarlar va Yaqinlar Uchun Ideal Sovg'a</h2>
+                <p style="color:var(--text-muted); font-size:0.96rem; line-height:1.7; margin-bottom:18px;">
+                    Kolleksion avtomobil — bu vaqt o'tishi bilan o'z qadrini yo'qotmaydigan, har qanday nufuzli ish stoli yoki shaxsiy kabinetga viqor bag'ishlaydigan shohona sovg'adir.
+                </p>
+                <p style="color:var(--text-muted); font-size:0.96rem; line-height:1.7; margin-bottom:24px;">
+                    Bizning maxsus <strong>Executive Gift Packaging</strong> to'plamimizga oltin zarhal quti, ipak lenta, oq paxta qo'lqoplari va individual tabrik kartasi kiradi.
+                </p>
+                <a href="cart.html" class="btn-order-express">Savatda Sovg'a Qadog'ini Tanlash &rarr;</a>
+            </div>
+
+            <div style="border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-medium); box-shadow:0 20px 45px rgba(0,0,0,0.8);">
+                <img src="images/luxury_gift_packaging.jpg" alt="Executive Diecast Masterpiece Gift Box" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="container faq-section">
+        <div class="section-header-centered">
+            <span class="badge-pulse">Savol va Javoblar</span>
+            <h2>Tez-Tez Beriladigan Savollar</h2>
+            <p>Mijozlarimiz tomonidan eng ko'p so'raladigan savollarga aniq javoblar.</p>
+        </div>
+
+        <div class="faq-container-narrow">
+            <div class="faq-item active">
+                <button class="faq-trigger" onclick="toggleFaqAccordion(this)">
+                    <span>1:18 va 1:24 masshtablar o'rtasida qanday farq bor?</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-content">
+                    <strong>1:18 masshtab</strong> — bu haqiqiy avtomobildan 18 barobar kichik, uzunligi taxminan 25-30 sm keladigan flagman o'lchamdir. Unda barcha eshiklar, kapot, bagaj ochiladi, rul buriladi va motor detallari juda mayda qismlargacha ko'rsatiladi. <br><br>
+                    <strong>1:24 masshtab</strong> — uzunligi 18-22 sm bo'lib, ixchamroq hisoblanadi. Ko'plab 1:24 modellarimizda interaktiv ovoz va yorug'lik effektlari mavjud.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-trigger" onclick="toggleFaqAccordion(this)">
+                    <span>Modellar og'ir metalldan yasalganmi yoki plastik?</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-content">
+                    Bizning kolleksiyamizdagi modellar <strong>Diecast (Zamak)</strong> texnologiyasi asosida og'ir metall quyish usulida tayyorlangan. 1:18 modelning vazni 1 kg dan 1.5 kg gacha bo'ladi. Rezina shinalar va mayda salon detallari esa ABS kompozitidan ishlanadi.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-trigger" onclick="toggleFaqAccordion(this)">
+                    <span>Toshkentdan tashqari boshqa viloyatlarga qanday yetkaziladi?</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-content">
+                    O'zbekistonning barcha 12 ta viloyatiga BTS, Express pochta yoki ishonchli kuryerlar orqali 24-48 soat ichida eshikkacha yetkaziladi. Barcha jo'natmalar xavfsiz penoplast qadoqqa joylanadi va sug'urtalanadi.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-trigger" onclick="toggleFaqAccordion(this)">
+                    <span>Modelni shourumga kelib ko'rib xarid qilsa bo'ladimi?</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-content">
+                    Albatta! Bizning Toshkent shahri, Mirobod tumani, Nukus ko'chasidagi shourumimiz har kuni 09:00 dan 21:00 gacha ochiq. Siz kelib, barcha modellarni o'z ko'zingiz bilan ko'rishingiz va mutaxassis maslahatini olishingiz mumkin.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & TELEGRAM CONTACT BANNER -->
+    <section class="container" id="locationSection">
+        <div class="location-banner-box">
+            <div class="location-text">
+                <span class="badge-pulse" style="margin-bottom: 12px;">Shourumimizga Tashrif Buyuring</span>
+                <h3>Biz Bilan Bog'laning</h3>
+                <p>
+                    Kolleksiyangiz uchun yangi durdona tanlashda savollaringiz bormi? Mutaxassislarimiz Telegram orqali real vaqtda modellarning video ko'rinishlarini yuborishga tayyor.
+                </p>
+
+                <div class="location-info-pills">
+                    <div class="loc-pill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <strong>Toshkent shahar, Mirobod tumani, Nukus ko'chasi 42-uy</strong>
+                    </div>
+                    <div class="loc-pill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Telefon: +998 (90) 123-45-67 (Har kuni 09:00 — 21:00)</span>
+                    </div>
+                    <div class="loc-pill">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                        <span>Telegram: @MiniCarCollectionUz (24/7 onlayn qo'llab-quvvatlash)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-action-col">
+                <a href="https://t.me/MiniCarCollectionUz" target="_blank" rel="noopener noreferrer" class="btn-telegram-contact-large">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                    <span>Telegramda Maslahat Olish</span>
+                </a>
+                <a href="catalog.html" class="btn-order-express" style="justify-content:center; padding:15px;">
+                    <span>Kolleksiyani Ko'rish (15 ta Model)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFCANVAS SHOPPING CART DRAWER -->
+    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" onclick="closeCartDrawer()"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h3 style="font-family: var(--font-display); font-size:1.3rem; color:#fff;">Savatingiz (Kolleksiya)</h3>
+            <button onclick="closeCartDrawer()" class="icon-action-btn" style="width:36px; height:36px; font-size:1.2rem;">&times;</button>
+        </div>
+
+        <div class="drawer-items-list" id="drawerItemsList">
+            <!-- Dynamic Cart Items -->
+        </div>
+
+        <div class="drawer-footer">
+            <div class="drawer-total-row">
+                <span style="font-size:0.95rem; color:var(--text-muted);">Jami to'lov:</span>
+                <strong id="drawerTotalPrice" style="font-size:1.4rem; color:#fff; font-family:var(--font-display);">0 UZS</strong>
+            </div>
+            <a href="cart.html" class="btn-order-express" style="width:100%; justify-content:center; text-decoration:none;">
+                <span>Xaridni Rasmiylashtirishga O'tish &rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <div class="logo-emblem">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 17h14v-5l-3-4H8L5 12v5z"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/></svg>
+                        </div>
+                        <div class="logo-text">
+                            <h2 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 800;">MiniCar<span>Collection</span></h2>
+                            <span class="logo-subtitle">Uzbekistan Diecast HQ</span>
+                        </div>
+                    </div>
+                    <p>O'zbekistondagi eng yirik rasmiy metall kolleksion avtomobil modellari shourumi. Barcha tasvirlar Nano Banana AI vositasi yordamida yuqori sifatda yaratilgan.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Katalog</h4>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html?scale=1-18">1:18 Flagman Modellar</a></li>
+                        <li><a href="catalog.html?scale=1-24">1:24 Ovoz va Chiroq</a></li>
+                        <li><a href="catalog.html?filter=exclusive">1:18 VIP Eksklyuziv</a></li>
+                        <li><a href="catalog.html?filter=supercar">Giperkarlar</a></li>
+                        <li><a href="catalog.html?filter=suv">Yo'ltanlamas & SUV</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Xaridorlarga</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Biz Haqimizda</a></li>
+                        <li><a href="#locationSection">Kafolat & Yetkazish</a></li>
+                        <li><a href="cart.html">Xarid Savati</a></li>
+                        <li><a href="catalog.html">Barcha Modellar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Bog'lanish</h4>
+                    <p style="margin-bottom: 8px;"><strong>Manzil:</strong> Toshkent sh., Mirobod t., Nukus ko'chasi 42</p>
+                    <p style="margin-bottom: 8px;"><strong>Telefon:</strong> +998 (90) 123-45-67</p>
+                    <a href="https://t.me/MiniCarCollectionUz" target="_blank" rel="noopener noreferrer" class="telegram-pill-link" style="margin-top:10px;">
+                        <span>Telegram: @MiniCarCollectionUz</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 MiniCarCollectionUz. Barcha huquqlar himoyalangan. Original Diecast Showroom.</div>
+                <div>Nano Banana AI High-Fidelity Diecast Visualization Engine</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT: ACCORDION, CART DRAWER & LIVE SYNC -->
+    <script>
+        let cartState = JSON.parse(localStorage.getItem('minicar_cart') || '[]');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCartCounter();
+
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('mainHeader');
+                if (window.scrollY > 30) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
+        });
+
+        function toggleFaqAccordion(btn) {
+            const item = btn.parentElement;
+            const isOpen = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isOpen) {
+                item.classList.add('active');
+            }
+        }
+
+        /* Cart Drawer Sync */
+        function openCartDrawer() {
+            renderDrawerCart();
+            document.getElementById('cartDrawer').classList.add('open');
+            document.getElementById('cartDrawerBackdrop').classList.add('open');
+        }
+
+        function closeCartDrawer() {
+            document.getElementById('cartDrawer').classList.remove('open');
+            document.getElementById('cartDrawerBackdrop').classList.remove('open');
+        }
+
+        function renderDrawerCart() {
+            const list = document.getElementById('drawerItemsList');
+            const totalEl = document.getElementById('drawerTotalPrice');
+            list.innerHTML = '';
+
+            if (cartState.length === 0) {
+                list.innerHTML = `
+                    <div style="text-align:center; padding:40px 10px; color:var(--text-dim);">
+                        <div style="font-size:2.8rem; margin-bottom:14px;">🛒</div>
+                        <h4 style="color:#fff; margin-bottom:6px;">Savatingiz bo'sh</h4>
+                        <p style="font-size:0.85rem;">Katalogimizdan avtomobil modelini tanlang</p>
+                    </div>
+                `;
+                totalEl.textContent = '0 UZS';
+                return;
+            }
+
+            let grandTotal = 0;
+            cartState.forEach((item, index) => {
+                grandTotal += item.price * item.quantity;
+                const row = document.createElement('div');
+                row.className = 'drawer-item';
+                row.innerHTML = `
+                    <div class="drawer-item-img">
+                        <img src="${item.img || 'images/hero_g63.jpg'}" alt="${item.title}" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="drawer-item-details">
+                        <div class="drawer-item-title">${item.title}</div>
+                        <div class="drawer-item-price">${(item.price).toLocaleString()} UZS</div>
+                        <div class="drawer-qty-controls">
+                            <button class="btn-qty" onclick="changeCartQty(${index}, -1)">-</button>
+                            <span style="font-size:0.85rem; font-weight:700; color:#fff;">${item.quantity}</span>
+                            <button class="btn-qty" onclick="changeCartQty(${index}, 1)">+</button>
+                            <button onclick="removeFromCart(${index})" style="margin-left:auto; font-size:0.75rem; color:#ef4444; text-decoration:underline;">O'chirish</button>
+                        </div>
+                    </div>
+                `;
+                list.appendChild(row);
+            });
+
+            totalEl.textContent = grandTotal.toLocaleString() + ' UZS';
+        }
+
+        function changeCartQty(index, delta) {
+            cartState[index].quantity += delta;
+            if (cartState[index].quantity <= 0) cartState.splice(index, 1);
+            localStorage.setItem('minicar_cart', JSON.stringify(cartState));
+            updateCartCounter();
+            renderDrawerCart();
+        }
+
+        function removeFromCart(index) {
+            cartState.splice(index, 1);
+            localStorage.setItem('minicar_cart', JSON.stringify(cartState));
+            updateCartCounter();
+            renderDrawerCart();
+        }
+
+        function updateCartCounter() {
+            const count = cartState.reduce((sum, item) => sum + item.quantity, 0);
+            const badge = document.getElementById('headerCartCount');
+            if (badge) {
+                badge.textContent = count;
+                badge.style.display = count > 0 ? 'flex' : 'none';
+            }
+        }
+    </script>
+</body>
+</html>
